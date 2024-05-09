@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/e0d3159641.js" crossorigin="anonymous"></script>
+
+    <!-- hoja de estilos CCS -->
+    <link rel="stylesheet" href="/style/estilos.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Oleo+Script:wght@400;700&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <title>La Mejor | Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="home_grid">
+            <div class="nombre">
+                <h1>La Mejor</h1>
+            </div>
+            <div class="logo_ensalada">
+                <img src="/images/icons8-ensalada.gif" alt="">
+            </div>
+        </div>
+
+        </div>
+        <div class="menu_grid">
+            <ul class="botones_grid">
+                <li><a class="menu_boton" href="/index.html">Volver al Home</a></li>
+
+            </ul>
+    </header>
+    <main>
+
+        <section>
+            <br>
+            <h2>Dejanos tus sugerencias o dudas</h2>
+            <br>
+            <form action="#" method="GET" id="script" novalidate>
+
+                <!-- Nombre -->
+                <div class="form-control">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required>
+                </div>
+
+                <div class="error" id="error-nombre"></div>
+
+                <!-- Apellido -->
+
+                <div class="form-control">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido...">
+                </div>
+                <div class="error" id="error-apellido"></div>
+
+                <!-- Mail -->
+                <div class="form-control">
+                    <label for="email">Mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Escribe tu email..." required>
+                </div>
+                <div class="error" id="error-email"></div>
+
+                <!-- Contraseña
+                <div class="form-control">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="error" id="error-password"></div> -->
+
+                <!-- Fecha de nacimiento -->
+                <div class="form-control">
+                    <label for="nacim">Fecha de nacimiento:</label>
+                    <input type="date" name="nacim" id="nacim" required>
+                </div>
+
+                <!-- Consigna: Radiobutton -->
+
+                <div class="form-control">
+                    <h4>Elige una opción:</h4>
+                    <label class="label-comer">
+                        <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
+                    </label>
+
+                    <label class="label-comer">
+                        <input type="radio" name="opcion" value="opcion2"> Comer en el Restaurante<br>
+                    </label>
+
+                </div>
+
+                <!-- Consigna: Imagen -->
+                <div class="form-control">
+                    <label for="imagen">¿Qué cocinaste esta semana?, subí la imagen:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                </div>
+
+                <!-- Consigna: Select -->
+                <div class="form-control">
+                    <label for="comida">Comida Favorita:</label>
+                    <select name="comida" id="comida" class="form-select">
+                        <option value="">Seleccionar</option>
+                        <option value="MI">Milanesa</option>
+                        <option value="AS">Asado</option>
+                        <option value="PE">Pescado</option>
+                        <option value="PI">Pizza</option>
+                        <option value="CH">Choripan</option>
+                        <option value="OT">Otra</option>
+                    </select>
+                </div>
+
+
+                <!-- Consulta -->
+
+                <div class="form-control">
+                    <label for="consul">Mensaje:</label>
+                    <textarea name="consul" id="consul" cols=28" rows="8" placeholder="Deja tu mensaje..."></textarea>
+                </div>
+
+                <!-- Términos y Condiciones - Consigna: checkbox -->
+
+                <div class="form-control">
+                    <label>
+                        <input type="checkbox" class="checkbox"> Acepto Términos y Condiciones
+                    </label>
+                </div>
+
+                <!-- Botón de Registro -->
+                <!-- <button class="form-control" type="submit">Enviar</button> -->
+                <div>
+                    <input class="boton_enviar" type="submit" value="Enviar">
+                </div>
+                <br>
+
+                <!-- link de ayuda -->
+                <div class="form-help">
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+        <script src="../Static/js/script.js"></script>
+
+    </main>
+    <br>
+    <footer>
+        <br>
+        <h2>Seguinos</h2>
+        <div>
+            <p align="center">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i><br><br>
+                Derechos reservados @2024
+            </p>
+            <br>
+        </div>
+
+    </footer>
+</body>
+
+</html>

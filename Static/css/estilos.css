@@ -1,0 +1,362 @@
+
+/* esto es una fuente importada de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400&family=Roboto&display=swap');
+/*  formato estandar de la Pagina para comenzar a introducir estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #0e0c79;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #dae4e9;
+
+}
+
+/* form {
+    background-color: #d4e3e7;
+    padding: 20px 5px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 35px #44aa9e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+} */
+/* 
+label {
+    font-size: 0.9em;
+    line-height: 2;
+    display: block;
+    margin-bottom: 2px;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="file"], textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+} */
+
+textarea{
+  min-width: 100%;
+  resize: none;
+  font-family: sans-serif;
+  min-height: 102px;
+}
+
+input[type="submit"] {
+    background-color: rgba(85, 5, 105, 0.89);;
+    color: #ededed;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+   
+}
+
+h1{
+    padding-top: 10px;
+    font-size: 50px;
+    margin: 0;
+    color: rgb(77, 9, 77);
+    text-shadow: 0 0 12px rgb(216, 136, 192);
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(85, 5, 105, 0.89);
+    display: block;
+    letter-spacing: 1.5px;
+    padding: 10px;
+}
+
+h3 {
+    color: rgb(23, 92, 92);
+    background-color: #ededed;
+    text-shadow: 0 0 12px rgb(216, 136, 192);
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+h4{
+    margin: 0;
+    font-family: sans-serif;
+    color: #0e0c79;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #dae4e9;
+}
+
+p{
+    color: #0f0a53;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    line-height: 1.5;
+    width: 100%;
+    padding: 20px;
+}
+
+em { 
+    color: rgb(77, 9, 77);
+    font-weight: bold;
+}
+
+img {
+    border-radius: 8px;
+    border: 5px solid rgb(155, 26, 155);
+    width: 50%;
+    height: 50%;
+}
+
+
+button {
+  
+    box-sizing: border-box;
+    background-color: #6e2222;
+    padding: 6px 12px;
+    border: none;
+    border: 1px solid #a3548f;
+    box-shadow: 0 0 45px rgba(6, 0, 12, 0.4);
+    border-radius: 4px;
+    color:#0f0a53
+}
+
+
+/* Estilo del fondo del menu */
+.menu {
+    display:block;
+    text-align: center;
+    word-spacing: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size:28px;
+      
+}
+/* estilo del boton del menu */
+.menu__boton{
+    display: inline-block;
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 12px;
+    margin:1%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px #07264e; 
+}
+/*  */
+.ancla{
+    text-decoration: none;
+}
+
+/* Estilo para que crezcan los botones cuando pasa el cursor por encima */
+.menu__boton:hover{
+    padding-left: 0 1.5%;
+    background-color:ghostwhite;
+    box-shadow: 15px 15px 25px #2981b4; 
+    transform: scale(1.2);
+
+    
+}
+
+/* formulario de contacto */
+.formulario {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+/* formulario de contacto */
+.form-label { 
+    display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* formulario de contacto */
+.form-control-input .form-select{
+    /* display: inline-block;
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding: 0 1%;
+    margin-bottom: 12px;
+    margin:1%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px #592A08;  */
+    position: relative;
+
+}
+
+.form-input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.form-input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+/* error en formulario */
+.error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.error-activo {
+	display: block;
+}
+
+/* Formulario Validación círculo (error) */
+.validacion {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.checkbox {
+	margin-right: 10px;
+}
+
+.form-control-terminos, 
+.error-term,
+.form-btn-enviar {
+	grid-column: span 2;
+}
+
+.error-term {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.error-term-activo {
+	display: block;
+}
+
+.form-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.form-btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+
+.form-mensaje-exito p {
+	margin: 0;
+}
+
+.form-mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+
+.form-mensaje-exito-activo {
+	display: block;
+}
+
+/* formulario de contacto: eleccion de dónde comer */
+.label-comer{
+    font-size: 13px;
+    font-weight: 200;
+}
+
+/* Formulario de contacto: Términos y condiciones  */
+/* .checkbox {
+    position: relative;
+  
+} */
+
+/* Estilos de la Validación */
+.form-control-correcto .validacion-estado {
+color: #119200;
+opacity: 1;
+}
+
+.form-control-incorrecto .form-label {
+    color: #db0b0b;
+}
+
+.form-control-incorrecto .validacion-estado {
+    color: #db0b0b;
+    opacity: 1;
+}
+
+.form-control-incorrecto .form-input {
+    border: 3px solid #db0b0b;
+}
+#footer { 
+    color: rgb(14, 14, 100);
+    align-items: center;
+    background-color: #a3548f;
+   
+    }
+
+    /* mediaqueries  */
+    @media screen and (max-width: 800px) {
+        .formulario {
+            grid-template-columns: 1fr;
+        }
+    
+        .form-control-terminos, 
+        .error-term,
+        .form-btn-enviar {
+            grid-column: 1;
+        }
+    
+        .form-btn {
+            width: 100%;
+        }
+    }

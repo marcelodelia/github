@@ -1,3 +1,4 @@
+/* Estilos que afectan a todas las paginas */
 * {
     margin: 0;
     padding: 0;
@@ -5,29 +6,29 @@
     font-family: 'Merienda';
 
 }
-
+/* Estilos que afectan a todas las paginas */
 h1 {
     text-align: center;
 }
-
+/* Estilos que afectan a todas las paginas */
 h2 {
     text-align: center;
 }
-
+/* Estilos que afectan a todas las paginas */
 header {
     background-color: #c0392b;
 }
-
+/* Estilos que afectan a todas las paginas */
 a {
     text-decoration: none;
     color: black;
 }
-
+/* Estilos que afectan a todas las paginas */
 footer {
     position: relative;
     background-color: chocolate;
 }
-
+/* Estilos de la pagina "contacto" */
 form {
     background-color:sandybrown;
     padding: 20px 5px;
@@ -38,14 +39,14 @@ form {
     border-radius: 5px;
     font-size: 16px;
 }
-
+/* Estilos de la pagina "contacto" */
 label {
     font-size: 0.9em;
     line-height: 2;
     display: block;
     margin-bottom: 2px;
 }
-
+/* Estilos de la pagina "contacto" */
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -57,15 +58,10 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
-}
-
-textarea {
     min-width: 100%;
     resize: none;
-    font-family: sans-serif;
-    min-height: 102px;
 }
-
+/* Estilos de la pagina "contacto" */
 input[type="submit"] {
     background-color: rgba(85, 5, 105, 0.89);
     ;
@@ -76,9 +72,7 @@ input[type="submit"] {
     cursor: pointer;
     
 }
-
-
-
+/* Estilos de la pagina "contacto" */
 input[type="radio"] {
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -86,59 +80,38 @@ input[type="radio"] {
 
 }
 
-
-.boton_enviar:hover{
-opacity: 0.8;
+/* Estilos del header de todas las paginas */
+.home_grid {
+    padding: 10px;
+    background-color: chocolate;
+    display: grid;
+    grid-template-areas: 'logo_ensalada nombre';
 }
-
-/* formulario de contacto */
-.form-control .form-select {
-    display: inline-block;
-    background-color: aliceblue;
-    margin-top: 5px;
-    padding: 0 1%;
-    margin-bottom: 12px;
-    margin: 1%;
-    border-radius: 10px;
-    box-shadow: 7px 7px 15px #592A08;
-
+/* Estilos del header de todas las paginas */
+.nombre {
+    grid-area: nombre;
+    font-size: 28px;
+    margin-right: 1000px;
 }
-
-/* formulario de contacto: eleccion de dónde comer */
-.label-comer {
-    font-size: 13px;
-    font-weight: 200;
+/* Estilos del header de todas las paginas */
+.logo_ensalada {
+    grid-area: logo_ensalada;
+    font-size: 30px;
+    margin: 10px 0 0 30px;
 }
-
-/* Formulario de contacto: Términos y condiciones  */
-.checkbox {
-    position: relative;
+/* Estilos del header de todas las paginas */
+.menu_grid {
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 'botones_grid lobo_noche parrillada vino cena_1 bife bsas_2';
 
 }
-
-.presentacion {
-    margin: 20px;
-    padding: 15px;
-    font-size: 18px;
+/* Estilos del header de todas las paginas */
+.botones_grid {
+    grid-area: botones_grid;
+    margin-left: 10px;
 }
-
-.primer_local {
-    width: 700px;
-    height: 400px;
-    margin: 20px;
-    border-radius: 20px 20px 20px 20px;
-
-}
-
-/* Estilo del fonfo del menu */
-.menu {
-    text-align: justify;
-    word-spacing: 1px;
-    font-size: 20px;
-
-}
-
-/* estilo del boton del menu */
+/* Estilos del header de todas las paginas */
 .menu_boton {
     display: inline-block;
     background-color: cornsilk;
@@ -150,122 +123,56 @@ opacity: 0.8;
     border-radius: 10px;
     box-shadow: 7px 7px 15px #592A08;
 }
-
-/* Estilo para que crezcan los botones cuando pasa el cursor por encima */
+/* Estilos del header de todas las paginas */
 .menu_boton:hover {
-    /*padding-left: 1.5%;
-    padding-right: 1.5%;*/
     background-color: ghostwhite;
     box-shadow: 15px 15px 25px #592A08;
     transform: scale(1.2);
-
-
-
 }
-
-.nombre {
-    grid-area: nombre;
-    font-size: 28px;
-    margin-right: 1000px;
-}
-
-.logo_ensalada {
-    grid-area: logo_ensalada;
-    font-size: 30px;
-    margin: 10px 0 0 30px;
-}
-
-.home_grid {
-    padding: 10px;
-    background-color: chocolate;
-    display: grid;
-    grid-template-areas: 'logo_ensalada nombre';
-}
-
-.menu_grid {
-    padding: 20px;
-    display: grid;
-    grid-template-areas: 'botones_grid lobo_noche parrillada vino cena_1 bife bsas_2';
-
-}
-
-.botones_grid {
-    grid-area: botones_grid;
-    margin-left: 10px;
-}
-
-.lobo_noche {
-    grid-area: lobo_noche;
-}
-
-.parrillada {
-    grid-area: parrillada;
-}
-
-.vino {
-    grid-area: vino;
-}
-
-.cena_1 {
-    grid-area: cena_1;
-}
-
-.bife {
-    grid-area: bife;
-}
-
-.bsas_2 {
-    grid-area: bsas_2;
-}
-
+/* Estilos del "index" */
 .imagenes_home {
     width: 150px;
     height: 100px;
     border-radius: 15px 45px 15px 45px;
 }
-
-
-.local_1_home {
-    grid-area: local_1_home;
-    width: 200px;
-    height: 150px;
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px #592A08;
+/* Estilos del "index" */
+.lobo_noche {
+    grid-area: lobo_noche;
 }
-
-.local_2_home {
-    grid-area: local_2_home;
-    margin-right: 10px;
-    width: 200px;
-    height: 150px;
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px #592A08;
+/* Estilos del "index" */
+.parrillada {
+    grid-area: parrillada;
 }
-
-.local_1 {
-    grid-area: local_1;
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px #592A08;
+/* Estilos del "index" */
+.vino {
+    grid-area: vino;
 }
-
-.local_2 {
-    grid-area: local_2;
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px #592A08;
+/* Estilos del "index" */
+.cena_1 {
+    grid-area: cena_1;
 }
-
-.grid_container_1 {
-    padding: 30px;
-    background-color: chocolate;
-    text-align: center;
-    display: grid;
-    grid-template-areas: 'local_1 local_2';
+/* Estilos del "index" */
+.bife {
+    grid-area: bife;
 }
-
+/* Estilos del "index" */
+.bsas_2 {
+    grid-area: bsas_2;
+}
+/* Estilos del "index" */
+.presentacion {
+    margin: 20px;
+    padding: 15px;
+    font-size: 18px;
+}
+/* Estilos del "index" */
+.primer_local {
+    width: 700px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+/* Estilos de la pagina "sucursales" */
 .grid_container_3 {
     padding: 30px;
     text-align: center;
@@ -274,54 +181,45 @@ opacity: 0.8;
     grid-template-areas: 'local_1 infolocal_1'
         'local_2 infolocal_2';
 }
-
+/* Estilos de la pagina "sucursales" */
 .infolocal_1 {
     grid-area: infolocal_1;
     text-align: left;
     padding: 20px;
 }
-
+/* Estilos de la pagina "sucursales" */
+.local_1 {
+    grid-area: local_1;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #592A08;
+}
+/* Estilos de la pagina "sucursales" */
+.img_locales {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #592A08;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+/* Estilos de la pagina "sucursales" */
 .infolocal_2 {
     grid-area: infolocal_2;
     text-align: left;
     padding: 20px;
 }
-
-
-
-.vacio {
-    grid-area: vacio;
-
+/* Estilos de la pagina "sucursales" */
+.local_2 {
+    grid-area: local_2;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #592A08;
 }
-
-.asado {
-    grid-area: asado;
-}
-
-.pollo {
-    grid-area: pollo;
-}
-
-.empanadas {
-    grid-area: empanadas;
-}
-
-.locro {
-    grid-area: locro;
-}
-
-.sorrentinos {
-    grid-area: sorrentinos;
-}
-
-.milanesas {
-    grid-area: milanesas;
-}
-
-.chorizo {
-    grid-area: chorizo;
-}
-
+/* Estilos de la pagina "menu" */
 .grid_container_2 {
     padding: 30px;
     text-align: center;
@@ -329,39 +227,54 @@ opacity: 0.8;
     grid-template-areas: 'asado vacio pollo empanadas'
         'locro sorrentinos milanesas chorizo';
     row-gap: 40px;
-
 }
-
-.img_locales {
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px #592A08;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-
-}
-
-
+/* Estilos de la pagina "menu" */
 .comida {
     width: 200px;
     height: 150px;
     border-radius: 20px;
     box-shadow: 7px 7px 15px #592A08;
-
+}
+/* Estilos de la pagina "menu" */
+.vacio {
+    grid-area: vacio;
 
 }
-
+/* Estilos de la pagina "menu" */
+.asado {
+    grid-area: asado;
+}
+/* Estilos de la pagina "menu" */
+.pollo {
+    grid-area: pollo;
+}
+/* Estilos de la pagina "menu" */
+.empanadas {
+    grid-area: empanadas;
+}
+/* Estilos de la pagina "menu" */
+.locro {
+    grid-area: locro;
+}
+/* Estilos de la pagina "menu" */
+.sorrentinos {
+    grid-area: sorrentinos;
+}
+/* Estilos de la pagina "menu" */
+.milanesas {
+    grid-area: milanesas;
+}
+/* Estilos de la pagina "menu" */
+.chorizo {
+    grid-area: chorizo;
+}
+/* Estilos de la pagina "ubicacion" */
 .mapa_mdp {
     margin: 10px;
     padding: 30px;
     font-size: 14px;
-
-
 }
-
+/* Estilos de la pagina "ubicacion" */
 .mapa_mdpimg {
     width: 500px;
     height: 300px;
@@ -370,86 +283,96 @@ opacity: 0.8;
     display: grid;
     grid-template-areas: 'iframe mdp_2';
     column-gap: 50px;
-
+}
+/* Estilos de la pagina "contacto" */
+.form-control .form-select {
+    display: inline-block;
+    background-color: aliceblue;
+    margin-top: 5px;
+    padding: 0 1%;
+    margin-bottom: 12px;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px #592A08;
+}
+/* Estilos de la pagina "contacto" */
+.label-comer {
+    font-size: 13px;
+    font-weight: 200;
+}
+/* Estilos de la pagina "contacto" */
+.boton_enviar:hover{
+    opacity: 0.8;
+    }
+/* Estilos de la pagina "contacto" */
+.checkbox {
+    position: relative;
 }
 
 
-/* tablet */
+/* Estilo del fonfo del menu */
+.menu {
+    text-align: justify;
+    word-spacing: 1px;
+    font-size: 20px;
 
+}
+
+/* Media querys para tablet */
 
 @media screen and (min-width:768px)and (max-width: 1023px) {
-
     h1 {
         font-size: 5vw;
         text-align: center;
     }
-
     h2 {
         font-size: 3vw;
     }
-
     h3 {
         font-size: 3vw;
     }
-
-
-
     .presentacion {
         font-size: 3vw;
 
     }
-
     .logo_ensalada {
         display: flex;
     }
-
     .comida {
         width: 150px;
         height: 100px;
     }
-
     .menu_grid {
         max-width: 720px;
 
     }
-
     .botones_grid {
         display: flex;
         flex-direction: column;
 
     }
-
     .bife {
         display: none;
     }
-
     .lobo_noche {
         display: none;
     }
-
     .vino {
         display: none;
     }
-
-
     .asado {
         display: none;
     }
-
     .cena_1 {
         display: none;
     }
-
     .primer_local {
         width: 500px;
         height: 300px;
     }
-
-
     .bsas_2 {
         display: none;
     }
-
     .grid_container_2 {
         max-width: 720px;
         grid-template-areas: 'asado vacio'
@@ -457,13 +380,6 @@ opacity: 0.8;
             'locro sorrentinos'
             'milanesas chorizo';
     }
-
-    .grid_container_1 {
-        max-width: 720px;
-        grid-template-areas: 'local_1'
-            'local_2';
-    }
-
     footer {
         flex-direction: column;
         align-items: center;
@@ -471,7 +387,7 @@ opacity: 0.8;
     }
 }
 
-/* celulares */
+/* Media querys para celulares */
 
 @media screen and (max-width: 767px) {
 
@@ -555,11 +471,6 @@ opacity: 0.8;
             'chorizo';
     }
 
-    .grid_container_1 {
-        max-width: 420px;
-        grid-template-areas: 'local_1'
-            'local_2';
-    }
 
     footer {
         flex-direction: column;

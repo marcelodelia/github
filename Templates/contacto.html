@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="../Static/img/favicon.ico" type="image/x-icon">
+
     <!-- hoja de estilos CCS -->
     <link rel="stylesheet" href="../Static/css/estilos.css">
-    <title>Gastranomía La Mejor |  Contacto</title>
+    <title>Gastranomía La Mejor | Contacto</title>
 </head>
-
 
 <body>
     <header>
         <table>
             <tr>
                 <td><img src="../Static/img/logo.png" alt="Logo" width="90"></td>
-                <td><h1>La Mejor</h1></td>
+                <td>
+                    <h1>La Mejor</h1>
+                </td>
             </tr>
         </table>
         <hr>
-        
+
         <nav>
             <h3>Contacto</h3>
             <ul class="menu">
@@ -29,101 +33,89 @@
                 <li><a class="menu__boton" href="./menu.html">Menú</a></li>
                 <li><a class="menu__boton" href="./contacto.html">Contacto</a></li>
             </ul>
-            <hr> 
+            <hr>
         </nav>
     </header>
-    
-    
+
     <main>
-        
-        <section>
-            <h2>Dejanos tus sugerencias o dudas</h2>
 
-            <form action="#" class="formulario" method="GET" id="formulario" novalidate>
 
-                <!-- Nombre -->
-                <div class="form-control" id="grupo-nombre">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <div class="form-control-input">
-                        <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required>
-                        <!-- <i class="fa-solid fa-check" aria-hidden="true"></i> "palomita" -->
-                        <i class="validacion fa fa-times-circle" aria-hidden="true"></i>
-                    </div>   
-                    <div class="error" id="error-nombre">Solo acepta letras</div>
+        <h2>Dejanos tus sugerencias o dudas</h2>
+
+        <form action="" method="GET" class="formulario" id="formulario" novalidate>
+
+            <!-- Nombre -->
+            <div class="form-control" id="grupo-nombre">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <div class="form-control-input">
+                    <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required>
+                    <i class="validacion-estado fa fa-times-circle"></i>
                 </div>
+                <p class="form-input-error">Solo acepta letras</p>
+            </div>
 
-                
+            <!-- Apellido -->
 
-                <!-- Apellido -->
-                
-                <div class="form-control" id="grupo-apellido">
-                    <label for="apellido" class="form-label">Apellido:</label>
-                    <div class="form-control-input">
-                    
-                        <input type="text" class="form-input" name="apellido" id="apellido" placeholder="Escribe tu apellido..." required>
-                        <i class="validacion fa fa-times-circle" aria-hidden="true"></i>
-                    </div>      
-                    <div class="error" id="error-apellido">Solo acepta letras</div>
-
+            <div class="form-control" id="grupo-apellido">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <div class="form-control-input">
+                    <input type="text" class="form-input" name="apellido" id="apellido"
+                        placeholder="Escribe tu apellido..." required>
+                    <i class="validacion-estado fa fa-times-circle"></i>
                 </div>
-                
+                <p class="form-input-error">Solo acepta letras</p>
+            </div>
 
-                <!-- Mail -->
-                <div class="form-control" id="grupo-email">
-                    <label for="email" class="form-label">Mail:</label>
-                    <div class="form-control-input">
-                        <input type="email" class="form-input" name="email" id="email" placeholder="Escribe tu email..." required>
-                        <i class="validacion fa fa-times-circle" aria-hidden="true"></i>
-                    </div>    
-                    <div class="error" id="error-email">El correo puede contener letras, números, puntos, guiones y guión bajo</div>
+
+            <!-- Mail -->
+            <div class="form-control" id="grupo-email">
+                <label for="email" class="form-label">Mail:</label>
+                <div class="form-control-input">
+                    <input type="email" class="form-input" name="email" id="email" placeholder="Escribe tu email..." required>
+                    <i class="validacion-estado fa fa-times-circle"></i>
                 </div>
-                
+                <p class="form-input-error">El correo puede contener letras, números, puntos, guiones y guión bajo</p>
+            </div>
 
-                <!-- Contraseña
-                <div class="form-control">
-                    <label for="">Contraseña</label>
-                    <input type="password" name="password" id="password" required>
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-control" id="grupo-nac">
+                <label for="nacim" class="form-label">Fecha de nacimiento:</label>
+                <div class="form-control-input">
+                    <input type="date" class="form-input" name="nacim" id="nacim" required>
+                    <i class="validacion-estado fa fa-times-circle"></i>
                 </div>
-                <div class="error" id="error-password"></div> -->
+                <p class="form-input-error">Indicar la fecha en números</p>
+            </div>
 
-                <!-- Fecha de nacimiento -->
-                <div class="form-control" id="grupo-nac">
-                    <label for="nacim" class="form-label">Fecha de nacimiento:</label>
-                    <div class="form-control-input">
-                        <input type="date" class="form-input" name="nacim" id="nacim" required>
-                        <i class="validacion fa fa-times-circle" aria-hidden="true"></i>
-                    </div>   
-                    <div class="error" id="error-nacim">Indicar la fecha en números</div>
+            <!-- Consigna: Radiobutton -->
+
+            <div class="form-control" id="grupo-comer">
+                <h4>Elige una opción:</h4>
+                <label class="label-comer">
+                    <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
+                </label>
+
+                <label class="label-comer">
+                    <input type="radio" name="opcion" value="opcion2"> Comer en el Restaurante<br>
+                </label>
+
+            </div>
+
+            <!-- Consigna: Imagen -->
+            <div class="form-control" id="grupo-imagen">
+                <label for="imagen" class="form-label">¿Qué cocinaste esta semana?, subí la imagen:</label>
+                <div class="form-control-input">
+                    <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*" required>
+                    <i class="validacion-estado fa fa-times-circle"></i>
                 </div>
+                <p class="form-input-error">Adjuntar una imagen</p>
+            </div>
 
-                <!-- Consigna: Radiobutton -->
-
-                <div class="form-control" id="grupo-comer">
-                    <h4>Elige una opción:</h4>
-                    <label class="label-comer">
-                        <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
-                    </label>
-                    
-                    <label class="label-comer">
-                        <input type="radio" name="opcion" value="opcion2"> Comer en el Restaurante<br>
-                    </label>
-                    
-                </div>
-
-                <!-- Consigna: Imagen -->
-                 <div class="form-control" id="grupo-imagen">
-                    <label for="imagen" class="form-label">¿Qué cocinaste esta semana?, subí la imagen:</label>
-                    <div class="form-control-input">
-                        <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*" requerido>
-                        <i class="validacion fa fa-times-circle" aria-hidden="true"></i>
-                    </div>
-                    <div class="error" id="error-imagen">Adjuntar una imagen</div>
-                 </div>
-
-                <!-- Consigna: Select -->
-                <div class="form-control" id="grupo-comida">
-                    <label for="comida">Comida Favorita:</label>
-                   <select name="comida" id="comida" class="form-select">
+            <!-- Consigna: Select -->
+            <div class="form-label" id="grupo-comida">
+                <label for="comida">Comida Favorita:</label>
+                <select name="comida" id="comida" class="form-select">
                     <option value="">Seleccionar</option>
                     <option value="MI">Milanesa</option>
                     <option value="AS">Asado</option>
@@ -131,60 +123,61 @@
                     <option value="PI">Pizza</option>
                     <option value="CH">Choripan</option>
                     <option value="OT">Otra</option>
-                   </select>
-                </div>
+                </select>
+            </div>
 
-                
-                 <!-- Consulta -->
 
-                 <div class="form-control" id="grupo-consulta">
-                    <label for="consul">Mensaje:</label>
-                    <textarea name="consul" id="consul" cols=28" rows="8" placeholder="Deja tu mensaje..."></textarea>
-                 </div>
+            <!-- Consulta -->
 
-                <!-- Términos y Condiciones - Consigna: checkbox -->
+            <div class="form-control" id="grupo-consulta">
+                <label class="form-label" for="consul">Mensaje:</label>
+                <textarea name="consul" id="consul" cols=28" rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </div>
 
-                <div class="form-control" id="grupo-term">
-                    <label class="form-label">
-                        <input type="checkbox" class="checkbox" name="terminos" id="terminos"> Acepto Términos y Condiciones    
-                    </label>
-                </div>
-                
-                <div class="error-term" id="error-term">
-                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Debe aceptar los Términos y Condiciones
-                </div>
+            <!-- Términos y Condiciones - Consigna: checkbox -->
 
-                <!-- Botón de Registro -->
-               
-                <div class="form-control form-btn-enviar" id="btn-enviar">
-                    <button type="submit" class="form-btn">Enviar</button>
-                    <p class="form-mensaje-exito" id="form-mensaje-exito">Formulario enviado con Éxito</p>
-                </div>
-                <br>
+            <div class="form-control" id="grupo-term">
+                <label class="form-label">
+                    <input type="checkbox" class="checkbox" name="terminos" id="terminos" required> Acepto Términos y Condiciones
+                </label>
+            </div>
 
-                <!-- link de ayuda -->
-                <div class="form-help">
-                    <a href="#" >¿Necesitas ayuda?</a>
-                </div>
+            <div class="error-term" id="error-term">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b>Debe aceptar los Términos y Condiciones</p>
+            </div>
 
-            </form>
-            
-        </section>
+            <!-- Botón de Registro -->
+
+            <div class="form-control form-btn-enviar">
+                <button type="submit" class="form-btn">Enviar</button>
+                <p class="form-mensaje-exito" id="form-mensaje-exito">Formulario enviado con Éxito</p>
+            </div>
+            <br>
+
+            <!-- link de ayuda -->
+            <div class="form-help">
+                <a href="#">¿Necesitas ayuda?</a>
+            </div>
+
+        </form>
+
+
 
     </main>
     <script src="../Static/js/script.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e0d3159641.js" crossorigin="anonymous"></script>
 
     <footer id="footer">
         <hr>
-        
+
         <hr>
         <h3>Tel - Mar del Plata: 0223 534 4343</h3>
         <h3>Tel - Buenos Aires: 011 4353 4343</h3>
-       
-    
+
+
     </footer>
 
-  
+
 </body>
+
 </html>

@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merienda';
 }
 
 body {
@@ -17,24 +18,7 @@ body {
     background-color: #dae4e9;
 
 }
-
-/* form {
-    background-color: #d4e3e7;
-    padding: 20px 5px;
-    max-width: 500px;
-    margin: auto;
-    box-shadow: 0 0 35px #44aa9e;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-} */
 /* 
-label {
-    font-size: 0.9em;
-    line-height: 2;
-    display: block;
-    margin-bottom: 2px;
-}
 
 input[type="text"], input[type="email"], input[type="date"], input[type="file"], textarea{
     width: 100%;
@@ -43,7 +27,63 @@ input[type="text"], input[type="email"], input[type="date"], input[type="file"],
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
-} */
+} */ 
+
+
+h1{
+
+    text-align: center;
+    /* padding-top: 10px;
+    font-size: 50px;
+    margin: 0;
+    color: rgb(77, 9, 77);
+    text-shadow: 0 0 12px rgb(216, 136, 192); */
+}
+
+h2 {
+    text-align: center;
+    /* margin: 0;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(85, 5, 105, 0.89);
+    display: block;
+    letter-spacing: 1.5px;
+    padding: 10px; */
+}
+
+h3 {
+    color: rgb(23, 92, 92);
+    background-color: #ededed;
+    text-shadow: 0 0 12px rgb(216, 136, 192);
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+h4{
+    margin: 0;
+    font-family: 'Merienda';
+    font-size: 15px;
+    font-weight: bold;
+ 
+    
+}
+
+
+header {
+    background-color: #c0392b;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    position: relative;
+    background-color: chocolate;
+}
+
 
 textarea{
   min-width: 100%;
@@ -68,46 +108,11 @@ input[type="radio"] {
    
 }
 
-h1{
-    padding-top: 10px;
-    font-size: 50px;
-    margin: 0;
-    color: rgb(77, 9, 77);
-    text-shadow: 0 0 12px rgb(216, 136, 192);
-}
 
-h2 {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(85, 5, 105, 0.89);
-    display: block;
-    letter-spacing: 1.5px;
-    padding: 10px;
-}
-
-h3 {
-    color: rgb(23, 92, 92);
-    background-color: #ededed;
-    text-shadow: 0 0 12px rgb(216, 136, 192);
-    letter-spacing: 2px;
-    font-family: sans-serif;
-    font-size: small;
-}
-
-h4{
-    margin: 0;
-    font-family: sans-serif;
-    color: #0e0c79;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #dae4e9;
-}
 
 p{
     color: #0f0a53;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Merienda';
     font-weight: bold;
     font-style: italic;
     text-align: justify;
@@ -180,21 +185,27 @@ button {
 
 /* formulario de contacto */
 .formulario {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+    background-color: sandybrown;
+    padding: 20px 5px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 35px #44aa9e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+   
 }
 
 /* formulario de contacto */
 .form-label { 
+    font-size: 0.9em;
+    line-height: 2;
     display: block;
-	font-weight: 700;
-	padding: 10px;
-	cursor: pointer;
+    margin-bottom: 2px;
 }
 
 /* formulario de contacto */
-.form-control-input .form-select{
+.form-control-input {
     /* display: inline-block;
     background-color: aliceblue;
     margin-top: 5px;
@@ -225,18 +236,18 @@ button {
 }
 
 /* error en formulario */
-.error {
+.form-input-error {
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
 }
 
-.error-activo {
+.form-input-error-activo {
 	display: block;
 }
 
 /* Formulario Validación círculo (error) */
-.validacion {
+.validacion-estado {
 	position: absolute;
 	right: 10px;
 	bottom: 15px;
@@ -249,11 +260,6 @@ button {
 	margin-right: 10px;
 }
 
-.form-control-terminos, 
-.error-term,
-.form-btn-enviar {
-	grid-column: span 2;
-}
 
 .error-term {
 	height: 45px;
@@ -278,7 +284,7 @@ button {
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
-	background: #000;
+	background: #851414;
 	color: #fff;
 	font-weight: bold;
 	border: none;
@@ -311,6 +317,9 @@ button {
 .label-comer{
     font-size: 13px;
     font-weight: 200;
+    background-color: #fff;
+	line-height: 25px;
+
 }
 
 /* Formulario de contacto: Términos y condiciones  */
@@ -342,21 +351,4 @@ opacity: 1;
     align-items: center;
     background-color: #a3548f;
    
-    }
-
-    /* mediaqueries  */
-    @media screen and (max-width: 800px) {
-        .formulario {
-            grid-template-columns: 1fr;
-        }
-    
-        .form-control-terminos, 
-        .error-term,
-        .form-btn-enviar {
-            grid-column: 1;
-        }
-    
-        .form-btn {
-            width: 100%;
-        }
     }

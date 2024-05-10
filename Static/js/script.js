@@ -14,36 +14,36 @@ const campos = {
 	email: false,
 	nacim: false,
 	imagen: false,
-	consul: false
+	// consul: false
 }
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
-			break;
+		break;
 		case "apellido":
 			validarCampo(expresiones.apellido, e.target, 'apellido');
-			break;
+		break;
 		case "email":
 			validarCampo(expresiones.email, e.target, 'email');
-			break;
+		break;
 		case "nacim":
 			validarCampo(expresiones.nacim, e.target, 'nacim');
-			break;
+		break;
 		case "imagen":
 			validarCampo(expresiones.imagen, e.target, 'imagen');
-			break;
-		case "consul":
-			validarCampo(expresiones.consul, e.target, 'consul');
-			break;
+		break;
+		// case "consul":
+		// 	validarCampo(expresiones.consul, e.target, 'consul');
+		// break;
 		
 	}
 
 }
 
-const validarCampo = (expresion, input, campo) => {
-	if (expresion.test(input.value)) {
+const validarCampo = (expresiones, inputs, campos) => {
+	if (expresiones.test(inputs.value)) {
 		document.getElementById('grupo__${campo}').classList.remove('form-control-incorrecto');
 		document.getElementById('grupo__${campo}').classList.add('form-control-correcto');
 		document.querySelector('#grupo__${campo} i').classList.add('fa-check-circle');
@@ -70,7 +70,7 @@ formulario.addEventListener('submit', (e) => {
 
 
 	const terminos = document.getElementById('terminos');
-	if (campos.nombre && campos.apellido && campos.email && campos.nacim && campos.imagen && campos.consul && terminos.cheked) {
+	if (campos.nombre && campos.apellido && campos.email && campos.nacim && campos.imagen && terminos.checked) {
 		formulario.reset();
 
 		document.getElementById('form-mensaje-exito').classList.add('form-mensaje-exito-activo');

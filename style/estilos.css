@@ -6,31 +6,37 @@
     font-family: 'Merienda';
 
 }
+
 /* Estilos que afectan a todas las paginas */
 h1 {
     text-align: center;
 }
+
 /* Estilos que afectan a todas las paginas */
 h2 {
     text-align: center;
 }
+
 /* Estilos que afectan a todas las paginas */
 header {
     background-color: #c0392b;
 }
+
 /* Estilos que afectan a todas las paginas */
 a {
     text-decoration: none;
     color: black;
 }
+
 /* Estilos que afectan a todas las paginas */
 footer {
     position: relative;
     background-color: chocolate;
 }
+
 /* Estilos de la pagina "contacto" */
 form {
-    background-color:sandybrown;
+    background-color: sandybrown;
     padding: 20px 5px;
     max-width: 500px;
     margin: auto;
@@ -39,6 +45,7 @@ form {
     border-radius: 5px;
     font-size: 16px;
 }
+
 /* Estilos de la pagina "contacto" */
 label {
     font-size: 0.9em;
@@ -46,6 +53,7 @@ label {
     display: block;
     margin-bottom: 2px;
 }
+
 /* Estilos de la pagina "contacto" */
 input[type="text"],
 input[type="email"],
@@ -61,6 +69,7 @@ textarea {
     min-width: 100%;
     resize: none;
 }
+
 /* Estilos de la pagina "contacto" */
 input[type="submit"] {
     background-color: rgba(85, 5, 105, 0.89);
@@ -70,8 +79,9 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
-    
+
 }
+
 /* Estilos de la pagina "contacto" */
 input[type="radio"] {
     border: 1px solid #ccc;
@@ -87,18 +97,21 @@ input[type="radio"] {
     display: grid;
     grid-template-areas: 'logo_ensalada nombre';
 }
+
 /* Estilos del header de todas las paginas */
 .nombre {
     grid-area: nombre;
     font-size: 28px;
     margin-right: 1000px;
 }
+
 /* Estilos del header de todas las paginas */
 .logo_ensalada {
     grid-area: logo_ensalada;
     font-size: 30px;
     margin: 10px 0 0 30px;
 }
+
 /* Estilos del header de todas las paginas */
 .menu_grid {
     padding: 20px;
@@ -106,11 +119,13 @@ input[type="radio"] {
     grid-template-areas: 'botones_grid lobo_noche parrillada vino cena_1 bife bsas_2';
 
 }
+
 /* Estilos del header de todas las paginas */
 .botones_grid {
     grid-area: botones_grid;
     margin-left: 10px;
 }
+
 /* Estilos del header de todas las paginas */
 .menu_boton {
     display: inline-block;
@@ -123,48 +138,58 @@ input[type="radio"] {
     border-radius: 10px;
     box-shadow: 7px 7px 15px #592A08;
 }
+
 /* Estilos del header de todas las paginas */
 .menu_boton:hover {
     background-color: ghostwhite;
     box-shadow: 15px 15px 25px #592A08;
     transform: scale(1.2);
 }
+
 /* Estilos del "index" */
 .imagenes_home {
     width: 150px;
     height: 100px;
     border-radius: 15px 45px 15px 45px;
 }
+
 /* Estilos del "index" */
 .lobo_noche {
     grid-area: lobo_noche;
 }
+
 /* Estilos del "index" */
 .parrillada {
     grid-area: parrillada;
 }
+
 /* Estilos del "index" */
 .vino {
     grid-area: vino;
 }
+
 /* Estilos del "index" */
 .cena_1 {
     grid-area: cena_1;
 }
+
 /* Estilos del "index" */
 .bife {
     grid-area: bife;
 }
+
 /* Estilos del "index" */
 .bsas_2 {
     grid-area: bsas_2;
 }
+
 /* Estilos del "index" */
 .presentacion {
     margin: 20px;
     padding: 15px;
     font-size: 18px;
 }
+
 /* Estilos del "index" */
 .primer_local {
     width: 700px;
@@ -172,6 +197,7 @@ input[type="radio"] {
     margin: 20px;
     border-radius: 20px 20px 20px 20px;
 }
+
 /* Estilos de la pagina "sucursales" */
 .grid_container_3 {
     padding: 30px;
@@ -181,12 +207,14 @@ input[type="radio"] {
     grid-template-areas: 'local_1 infolocal_1'
         'local_2 infolocal_2';
 }
+
 /* Estilos de la pagina "sucursales" */
 .infolocal_1 {
     grid-area: infolocal_1;
     text-align: left;
     padding: 20px;
 }
+
 /* Estilos de la pagina "sucursales" */
 .local_1 {
     grid-area: local_1;
@@ -195,22 +223,26 @@ input[type="radio"] {
     border-radius: 15px;
     box-shadow: 7px 7px 15px #592A08;
 }
+
 /* Estilos de la pagina "sucursales" */
 .img_locales {
     width: 300px;
     height: 200px;
     border-radius: 15px;
     box-shadow: 7px 7px 15px #592A08;
+
     &:hover {
         transform: scale(1.1);
     }
 }
+
 /* Estilos de la pagina "sucursales" */
 .infolocal_2 {
     grid-area: infolocal_2;
     text-align: left;
     padding: 20px;
 }
+
 /* Estilos de la pagina "sucursales" */
 .local_2 {
     grid-area: local_2;
@@ -219,6 +251,7 @@ input[type="radio"] {
     border-radius: 15px;
     box-shadow: 7px 7px 15px #592A08;
 }
+
 /* Estilos de la pagina "menu" */
 .grid_container_2 {
     padding: 30px;
@@ -228,6 +261,7 @@ input[type="radio"] {
         'locro sorrentinos milanesas chorizo';
     row-gap: 40px;
 }
+
 /* Estilos de la pagina "menu" */
 .comida {
     width: 200px;
@@ -235,55 +269,115 @@ input[type="radio"] {
     border-radius: 20px;
     box-shadow: 7px 7px 15px #592A08;
 }
+
 /* Estilos de la pagina "menu" */
 .vacio {
     grid-area: vacio;
 
 }
+
 /* Estilos de la pagina "menu" */
 .asado {
     grid-area: asado;
 }
+
 /* Estilos de la pagina "menu" */
 .pollo {
     grid-area: pollo;
 }
+
 /* Estilos de la pagina "menu" */
 .empanadas {
     grid-area: empanadas;
 }
+
 /* Estilos de la pagina "menu" */
 .locro {
     grid-area: locro;
 }
+
 /* Estilos de la pagina "menu" */
 .sorrentinos {
     grid-area: sorrentinos;
 }
+
 /* Estilos de la pagina "menu" */
 .milanesas {
     grid-area: milanesas;
 }
+
 /* Estilos de la pagina "menu" */
 .chorizo {
     grid-area: chorizo;
 }
+
+/* Estilos de la pagina "ubicacion" */
+.mapa_grid {
+    display: grid;
+    grid-template-areas: 'direccion_local1 mapa_mdpimg'
+        'direccion_local2 mapa_bsasimg';
+    row-gap: 50px;
+}
+
+/* Estilos de la pagina "ubicacion" */
+.direccion_local1 {
+    grid-area: direccion_local1;
+    text-align: justify;
+    margin: 30px;
+}
+
 /* Estilos de la pagina "ubicacion" */
 .mapa_mdp {
-    margin: 10px;
-    padding: 30px;
+    grid-area: mapa_mdp;
     font-size: 14px;
-}
-/* Estilos de la pagina "ubicacion" */
-.mapa_mdpimg {
+    height: 350px;
     width: 500px;
-    height: 300px;
+
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 7px 7px 15px #592A08;
-    display: grid;
-    grid-template-areas: 'iframe mdp_2';
-    column-gap: 50px;
 }
+
+/* Estilos de la pagina "ubicacion" */
+.mapa_mdpimg {
+    grid-area: mapa_mdpimg;
+    height: 350px;
+    width: 500px;
+    margin-top: 150px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #592A08;
+}
+
+/* Estilos de la pagina "ubicacion" */
+.direccion_local2 {
+    grid-area: direccion_local2;
+    text-align: justify;
+    margin: 30px;
+}
+
+/* Estilos de la pagina "ubicacion" */
+.mapa_bsas {
+    grid-area: mapa_bsas;
+
+    padding: 10px;
+    font-size: 14px;
+    height: 350px;
+    width: 500px;
+
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #592A08;
+}
+
+/* Estilos de la pagina "ubicacion" */
+.mapa_bsasimg {
+    grid-area: mapa_bsasimg;
+    height: 350px;
+    width: 500px;
+    margin-top: 150px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px #592A08;
+}
+
 /* Estilos de la pagina "contacto" */
 .form-control .form-select {
     display: inline-block;
@@ -295,15 +389,18 @@ input[type="radio"] {
     border-radius: 10px;
     box-shadow: 7px 7px 15px #592A08;
 }
+
 /* Estilos de la pagina "contacto" */
 .label-comer {
     font-size: 13px;
     font-weight: 200;
 }
+
 /* Estilos de la pagina "contacto" */
-.boton_enviar:hover{
+.boton_enviar:hover {
     opacity: 0.8;
-    }
+}
+
 /* Estilos de la pagina "contacto" */
 .checkbox {
     position: relative;
@@ -325,61 +422,90 @@ input[type="radio"] {
         font-size: 5vw;
         text-align: center;
     }
+
     h2 {
         font-size: 3vw;
     }
+
     h3 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
+
+    .nombre {
+        padding-left: 20px;
+    }
+
     .presentacion {
         font-size: 3vw;
 
     }
+
+    /* Estilos del header de todas las paginas */
     .logo_ensalada {
-        display: flex;
+        display: inline-flexbox;
     }
-    .comida {
-        width: 150px;
-        height: 100px;
-    }
+
+ 
+    /* Estilos del header de todas las paginas */
     .menu_grid {
         max-width: 720px;
 
     }
+
+    /* Estilos del header de todas las paginas */
     .botones_grid {
         display: flex;
         flex-direction: column;
+        margin-right: 80px;
 
     }
+
+    /* Estilos del "index" */
     .bife {
         display: none;
     }
+
+    /* Estilos del "index" */
     .lobo_noche {
         display: none;
     }
-    .vino {
-        display: none;
-    }
-    .asado {
-        display: none;
-    }
-    .cena_1 {
-        display: none;
-    }
+
+
+    /* Estilos del "index" */
     .primer_local {
         width: 500px;
         height: 300px;
     }
+
     .bsas_2 {
         display: none;
     }
+
     .grid_container_2 {
         max-width: 720px;
-        grid-template-areas: 'asado vacio'
-            'pollo empanadas'
-            'locro sorrentinos'
-            'milanesas chorizo';
+        grid-template-areas: 'asado vacio pollo'
+            'empanadas locro sorrentinos';
+        column-gap: 60px;
+        margin-left: 80px;
+        margin-bottom: -60px;
+
     }
+
+    .milanesa{
+        display: none;
+    }
+
+    .chorizo{
+        display: none;
+    }
+    .comida {
+        width: 150px;
+        height: 100px;
+   
+    }
+    
+
+
     footer {
         flex-direction: column;
         align-items: center;
@@ -391,76 +517,104 @@ input[type="radio"] {
 
 @media screen and (max-width: 767px) {
 
+    /* Estilos del header de todas las paginas */
     h1 {
         font-size: 5vw;
     }
 
+    /* Estilos del header de todas las paginas */
     h2 {
         font-size: 4vw;
+        margin-top: 10px;
     }
 
+    /* Estilos del header de todas las paginas */
     h3 {
         font-size: 3vw;
     }
 
-    .primer_local {
-        width: 300px;
-        height: 200px;
-
+    /* Estilos del header de todas las paginas */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .presentacion {
-        font-size: 3vw;
-
+    /* Estilos del header de todas las paginas */
+    .nombre {
+        padding-left: 50px;
+        padding-top: 10px;
     }
 
+    /* Estilos del header de todas las paginas */
     .logo_ensalada {
         display: flex;
     }
 
-    .comida {
-        width: 150px;
-        height: 100px;
-    }
-
-    .botones_grid {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .bife {
-        display: none;
-    }
-
-    .lobo_noche {
-        display: none;
-    }
-
-    .vino {
-        display: none;
-    }
-
-
-    .asado {
-        display: none;
-    }
-
-    .cena_1 {
-        display: none;
-    }
-
-    .bsas_2 {
-        display: none;
-    }
-
+    /* Estilos del header de todas las paginas */
     .menu_grid {
         max-width: 420px;
     }
 
+    /* Estilos del header de todas las paginas */
+    .botones_grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilos del "index" */
+    .presentacion {
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+
+    /* Estilos del "index" */
+    .primer_local {
+        width: 300px;
+        height: 200px;
+        padding-left: 10px;
+    }
+
+    /* Estilos del "index" */
+    .parrillada {
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+
+    /* Estilos del "index" */
+    .bife {
+        display: none;
+    }
+
+    /* Estilos del "index" */
+    .lobo_noche {
+        display: none;
+    }
+
+    /* Estilos del "index" */
+    .vino {
+        display: none;
+    }
+
+    /* Estilos del "index" */
+    .asado {
+        display: none;
+    }
+
+    /* Estilos del "index" */
+    .cena_1 {
+        display: none;
+    }
+
+    /* Estilos del "index" */
+    .bsas_2 {
+        display: none;
+    }
+
+    /* Estilos de la pagina "menu" */
     .grid_container_2 {
         max-width: 420px;
-        margin: 10px;
+        margin-top: -40px;
         grid-template-areas: 'asado'
             'vacio'
             'pollo'
@@ -471,10 +625,92 @@ input[type="radio"] {
             'chorizo';
     }
 
+    /* Estilos de la pagina "menu" */
+    .comida {
+        width: 150px;
+        height: 100px;
+        font-size: 3vw;
 
-    footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
+
+
+
+    /* Estilos de la pagina "Sucursales" */
+    .grid_container_3 {
+        max-width: 420px;
+        margin-top: -30px;
+        grid-template-areas: 'local_1'
+            'infolocal_1'
+            'local_2'
+            'infolocal_2';
+
+    }
+
+
+    /* Estilos de la pagina "Sucursales" */
+    .local_2 {
+        margin-top: -100px;
+
+    }
+
+
+    /* Estilos de la pagina "Sucursales" */
+    .infolocal_1 {
+        margin-top: -110px;
+        font-size: 3vw;
+
+    }
+
+    .infolocal_2 {
+        margin-top: -110px;
+        font-size: 3vw;
+
+    }
+
+
+    /* Estilos de la pagina "Sucursales" */
+    .mapa_grid {
+        max-width: 420px;
+        margin-top: -30px;
+        font-size: 3vw;
+        grid-template-areas: 'direccion_local1'
+            'direccion_local2';
+    }
+
+    /* Estilos de la pagina "Sucursales" */
+    .direccion_local1 {
+        padding-top: 20px;
+    }
+
+    /* Estilos de la pagina "Sucursales" */
+    .direccion_local2 {
+        padding-top: -40px;
+    }
+
+    /* Estilos de la pagina "Sucursales" */
+    .mapa_mdp {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    /* Estilos de la pagina "Sucursales" */
+    .mapa_bsas {
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Estilos de la pagina "Sucursales" */
+    .mapa_mdpimg {
+        display: none;
+    }
+
+    /* Estilos de la pagina "Sucursales" */
+    .mapa_bsasimg {
+        display: none;
+    }
+
+
+
+
 }

@@ -4,8 +4,8 @@ const inputs = document.querySelectorAll('#formulario input');
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	nacim: /^.{4,12}$/, // 4 a 12 digitos.
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	nacim: /^.{4,12}$/, // 4 a 12 digitos.
 }
 
 const campos = {
@@ -42,18 +42,18 @@ const validarFormulario = (e) => {
 
 }
 
-const validarCampo = (expresiones, inputs, campos) => {
-	if (expresiones.test(inputs.value)) {
+const validarCampo = (expresion, input, campo) => {
+	if (expresion.test(input.value)) {
 		document.getElementById('grupo__${campo}').classList.remove('form-control-incorrecto');
 		document.getElementById('grupo__${campo}').classList.add('form-control-correcto');
 		document.querySelector('#grupo__${campo} i').classList.add('fa-check-circle');
-		document.querySelector('#grupo__${campo} i').classList.remove('fa fa-times-circle');
+		document.querySelector('#grupo__${campo} i').classList.remove('fa-solid fa-circle-xmark');
 		document.querySelector('#grupo__${campo} .form-input-error').classList.remove('form-input-error-activo');
 		campos[campo] = true;
 	} else {
 		document.getElementById('grupo__${campo}').classList.add('form-control-incorrecto');
 		document.getElementById('grupo__${campo}').classList.remove('form-control-correcto');
-		document.querySelector('#grupo__${campo} i').classList.add('fa fa-times-circle');
+		document.querySelector('#grupo__${campo} i').classList.add('fa-solid fa-circle-xmark');
 		document.querySelector('#grupo__${campo} i').classList.remove('fa-check-circle');
 		document.querySelector('#grupo__${campo} .form-input-error').classList.add('form-input-error-activo');
 		campos[campo] = false;

@@ -12,11 +12,18 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    color: #0e0c79;
+    color: #1b0872;
     font-size: 15px;
     font-weight: bold;
-    background-color: #dae4e9;
+    background-color: #cebc6a;
 
+}
+
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
 }
 /* 
 
@@ -177,7 +184,7 @@ button {
 .menu__boton:hover{
     padding-left: 0 1.5%;
     background-color:ghostwhite;
-    box-shadow: 15px 15px 25px #2981b4; 
+    box-shadow: 15px 15px 25px #bde01e; 
     transform: scale(1.2);
 
     
@@ -185,7 +192,7 @@ button {
 
 /* formulario de contacto */
 .formulario {
-    background-color: sandybrown;
+    background-color: rgb(206, 129, 62);
     padding: 20px 5px;
     max-width: 500px;
     margin: auto;
@@ -230,7 +237,7 @@ button {
 }
 
 .form-input:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #ff8800;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
@@ -330,8 +337,8 @@ button {
 
 /* Estilos de la Validación */
 .form-control-correcto .validacion-estado {
-color: #119200;
-opacity: 1;
+    color: #119200;
+    opacity: 1;
 }
 
 .form-control-incorrecto .form-label {
@@ -346,6 +353,8 @@ opacity: 1;
 .form-control-incorrecto .form-input {
     border: 3px solid #db0b0b;
 }
+
+
 #footer { 
     color: rgb(14, 14, 100);
     align-items: center;

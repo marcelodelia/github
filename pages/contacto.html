@@ -39,120 +39,138 @@
     </header>
     <main>
 
-        <section>
+        <h2>Dejanos tus sugerencias o dudas</h2>
+
+        <form action="" method="GET" class="formulario" id="formulario" novalidate>
+
+            <!-- Nombre -->
+            <div class="form-control" id="grupo-nombre">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <div class="form-control-input">
+                    <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escribe tu nombre..."
+                        required>
+                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                    
+                </div>
+                <p class="form-input-error">Solo acepta letras</p>
+            </div>
+
+            <!-- Apellido -->
+
+            <div class="form-control" id="grupo-apellido">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <div class="form-control-input">
+                    <input type="text" class="form-input" name="apellido" id="apellido"
+                        placeholder="Escribe tu apellido..." required>
+                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form-input-error">Solo acepta letras</p>
+            </div>
+
+
+            <!-- Mail -->
+            <div class="form-control" id="grupo-email">
+                <label for="email" class="form-label">Mail:</label>
+                <div class="form-control-input">
+                    <input type="email" class="form-input" name="email" id="email" placeholder="Escribe tu email..."
+                        required>
+                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form-input-error">El correo puede contener letras, números, puntos, guiones y guión bajo</p>
+            </div>
+
+
+            <!-- Fecha de nacimiento -->
+            <div class="form-control" id="grupo-nac">
+                <label for="nacim" class="form-label">Fecha de nacimiento:</label>
+                <div class="form-control-input">
+                    <input type="date" class="form-input" name="nacim" id="nacim" required>
+                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form-input-error">Indicar la fecha en números</p>
+            </div>
+
+            <!-- Consigna: Radiobutton -->
+
+            <div class="form-control" id="grupo-comer">
+                <h4>Elige una opción:</h4>
+                <label class="label-comer">
+                    <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
+                </label>
+
+                <label class="label-comer">
+                    <input type="radio" name="opcion" value="opcion2"> Comer en el Restaurante<br>
+                </label>
+
+            </div>
+
+            <!-- Consigna: Imagen -->
+            <div class="form-control" id="grupo-imagen">
+                <label for="imagen" class="form-label">¿Qué cocinaste esta semana?, subí la imagen:</label>
+                <div class="form-control-input">
+                    <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*" required>
+                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form-input-error">Adjuntar una imagen</p>
+            </div>
+
+            <!-- Consigna: Select -->
+            <div class="form-label" id="grupo-comida">
+                <label for="comida">Comida Favorita:</label>
+                <select name="comida" id="comida" class="form-select">
+                    <option value="">Seleccionar</option>
+                    <option value="MI">Milanesa</option>
+                    <option value="AS">Asado</option>
+                    <option value="PE">Pescado</option>
+                    <option value="PI">Pizza</option>
+                    <option value="CH">Choripan</option>
+                    <option value="OT">Otra</option>
+                </select>
+            </div>
+
+
+            <!-- Consulta -->
+
+            <div class="form-control" id="grupo-consulta">
+                <label class="form-label" for="consul">Mensaje:</label>
+                <textarea name="consul" id="consul" cols=28" rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </div>
+
+            <!-- Términos y Condiciones - Consigna: checkbox -->
+
+            <div class="form-control" id="grupo-term">
+                <label class="form-label">
+                    <input type="checkbox" class="checkbox" name="terminos" id="terminos" required> Acepto Términos y
+                    Condiciones
+                </label>
+            </div>
+
+            <div class="error-term" id="error-term">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Debe aceptar los Términos y
+                    Condiciones</p>
+
+            </div>
+
+            <!-- Botón de Registro -->
+
+            <div class="form-control form-btn-enviar">
+                <button type="submit" class="form-btn">Enviar</button>
+                <p class="form-mensaje-exito" id="form-mensaje-exito">Formulario enviado con Éxito</p>
+            </div>
             <br>
-            <h2>Dejanos tus sugerencias o dudas</h2>
-            <br>
-            <form action="#" method="GET" id="script" novalidate>
 
-                <!-- Nombre -->
-                <div class="form-control">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..." required>
-                </div>
+            <!-- link de ayuda -->
+            <div class="form-help">
+                <a href="#">¿Necesitas ayuda?</a>
+            </div>
 
-                <div class="error" id="error-nombre"></div>
-
-                <!-- Apellido -->
-
-                <div class="form-control">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido...">
-                </div>
-                <div class="error" id="error-apellido"></div>
-
-                <!-- Mail -->
-                <div class="form-control">
-                    <label for="email">Mail:</label>
-                    <input type="email" name="email" id="email" placeholder="Escribe tu email..." required>
-                </div>
-                <div class="error" id="error-email"></div>
-
-                <!-- Contraseña
-                <div class="form-control">
-                    <label for="">Contraseña</label>
-                    <input type="password" name="password" id="password" required>
-                </div>
-                <div class="error" id="error-password"></div> -->
-
-                <!-- Fecha de nacimiento -->
-                <div class="form-control">
-                    <label for="nacim">Fecha de nacimiento:</label>
-                    <input type="date" name="nacim" id="nacim" required>
-                </div>
-
-                <!-- Consigna: Radiobutton -->
-
-                <div class="form-control">
-                    <h4>Elige una opción:</h4>
-                    <label class="label-comer">
-                        <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
-                    </label>
-
-                    <label class="label-comer">
-                        <input type="radio" name="opcion" value="opcion2"> Comer en el Restaurante<br>
-                    </label>
-
-                </div>
-
-                <!-- Consigna: Imagen -->
-                <div class="form-control">
-                    <label for="imagen">¿Qué cocinaste esta semana?, subí la imagen:</label>
-                    <input type="file" id="imagen" name="imagen" accept="image/*">
-                </div>
-
-                <!-- Consigna: Select -->
-                <div class="form-control">
-                    <label for="comida">Comida Favorita:</label>
-                    <select name="comida" id="comida" class="form-select">
-                        <option value="">Seleccionar</option>
-                        <option value="MI">Milanesa</option>
-                        <option value="AS">Asado</option>
-                        <option value="PE">Pescado</option>
-                        <option value="PI">Pizza</option>
-                        <option value="CH">Choripan</option>
-                        <option value="OT">Otra</option>
-                    </select>
-                </div>
+        </form>
 
 
-                <!-- Consulta -->
-
-                <div class="form-control">
-                    <label for="consul">Mensaje:</label>
-                    <textarea name="consul" id="consul" cols=28" rows="8" placeholder="Deja tu mensaje..."></textarea>
-                </div>
-
-                <!-- Términos y Condiciones - Consigna: checkbox -->
-
-                <div class="form-control">
-                    <label>
-                        <input type="checkbox" class="checkbox"> Acepto Términos y Condiciones
-                    </label>
-                </div>
-
-                <!-- Botón de Registro -->
-                <!-- <button class="form-control" type="submit">Enviar</button> -->
-                <div>
-                    <input class="boton_enviar" type="submit" value="Enviar">
-                </div>
-                <br>
-
-                <!-- link de ayuda -->
-                <div class="form-help">
-                    <a href="#">¿Necesitas ayuda?</a>
-                </div>
-
-
-            </form>
-
-        </section>
-
-
-        <script src="../Static/js/script.js"></script>
 
     </main>
-    <br>
+    <script src="/javascrip/script.js"></script>
+
     <footer>
         <br>
         <h2>Seguinos</h2>

@@ -17,17 +17,17 @@ formulario.addEventListener('submit', (e) => {
 const validarFormulario = (e) => {
 switch (e.target.name){
 	case "nombre":
-		if(expresiones.nombre.test())
-			{}
+		validarCampo(expresiones.nombre, e.target, 'nombre');
 	break;
 	case "apellido":
-	console.log('funciona');
+		validarCampo(expresiones.apellido, e.target, 'apellido');
+	
 	break;
 	case "email":
-	console.log('funciona');
+		validarCampo(expresiones.email, e.target, 'email');
 	break;
 	case "nacim":
-	console.log('funciona');
+		validarCampo(expresiones.nacim, e.target, 'nacim');
 	break;
 	case "opcion1":
 	console.log('funciona');
@@ -39,6 +39,26 @@ switch (e.target.name){
 	console.log('funciona');
 	break;
 }
+}
+
+
+const validarCampo = (expresion, input, campo) => {
+	if(expresion.test(input.value)){
+		document.getElementById(`grupo-${campo}`).classList.remove('form-control-incorrecto');
+		document.getElementById(`grupo-${campo}`).classList.add('form-control-correcto');
+		document.querySelector(`#grupo-${campo} i`).classList.add('fa-solid fa-circle-check');
+		document.querySelector(`#grupo-${campo} i`).classList.remove('fa-solid fa-circle-xmark');
+		document.querySelector(`#grupo-${campo} form-input-error`).classList.remove('form-input-error-activo')
+		
+
+	}else{
+		document.getElementById(`grupo-${campo}`).classList.add('form-control-incorrecto');
+		document.getElementById(`grupo-${campo}`).classList.remove('form-control-correcto');
+		document.querySelector(`#grupo-${campo} i`).classList.add('fa-solid fa-circle-check');
+		document.querySelector(`#grupo-${campo} i`).classList.remove('fa-solid fa-circle-xmark');
+		document.querySelector(`#grupo-${campo} form-input-error`).classList.add('form-input-error-activo')
+
+	}
 }
 
 

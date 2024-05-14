@@ -407,7 +407,7 @@ input[type="radio"] {
     margin:1%;
     border-radius: 10px;
     box-shadow: 7px 7px 15px #592A08;  */
-    position: relative;
+    position:relative;
 
 }
 
@@ -496,6 +496,7 @@ input[type="radio"] {
 	font-size: 14px;
 	color: #119200;
 	display: none;
+    
 }
 
 
@@ -518,6 +519,7 @@ input[type="radio"] {
 .form-control-correcto .validacion-estado {
     color: #119200;
     opacity: 1;
+    
 }
 
 .form-control-incorrecto .form-label {

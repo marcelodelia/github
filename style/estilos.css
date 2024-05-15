@@ -145,6 +145,10 @@ input[type="radio"] {
     box-shadow: 15px 15px 25px #592A08;
     transform: scale(1.2);
 }
+/* Estilos del header de todas las paginas */
+.redes{
+    text-align: center;
+}
 
 /* Estilos del "index" */
 .imagenes_home {

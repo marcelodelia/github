@@ -354,10 +354,14 @@ button {
     border: 3px solid #db0b0b;
 }
 
+.sociales {
+    height: 15px;
+    text-align: center;
+
+}
 
 #footer { 
     color: rgb(14, 14, 100);
-    align-items: center;
     background-color: #a3548f;
    
     }

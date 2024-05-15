@@ -1,4 +1,5 @@
 const formulario = document.getElementById('formulario');
+
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
@@ -11,78 +12,76 @@ const expresiones = {
 const campos = {
 	nombre: false,
 	apellido: false,
-	email: false,
-	nacim: false,
-	imagen: false,
-	// consul: false
-}
+ 	email: false,
+ 	nacim: false,
+ 	imagen: false,
+   // consul: false
+ }
 
 const validarFormulario = (e) => {
-	switch (e.target.name) {
-		case "nombre":
-			validarCampo(expresiones.nombre, e.target, 'nombre');
-		break;
-		case "apellido":
-			validarCampo(expresiones.apellido, e.target, 'apellido');
-		break;
-		case "email":
-			validarCampo(expresiones.email, e.target, 'email');
-		break;
-		case "nacim":
-			validarCampo(expresiones.nacim, e.target, 'nacim');
-		break;
-		case "imagen":
-			validarCampo(expresiones.imagen, e.target, 'imagen');
-		break;
+ 	switch (e.target.name) {
+ 		case "nombre":
+			validarCampo(expresiones.nombre, e.target,'nombre');
+ 		break;
+ 		case "apellido":
+ 			validarCampo(expresiones.apellido, e.target,'apellido');
+ 		break;
+ 		case "email":
+			validarCampo(expresiones.email, e.target,'email');
+ 		break;
+ 		case "nacim":
+ 			validarCampo(expresiones.nacim, e.target,'nacim');
+ 		break;
+ 	    case "imagen":
+ 		 	validarCampo(expresiones.imagen, e.target,'imagen');
+ 		 break;
 		// case "consul":
 		// 	validarCampo(expresiones.consul, e.target, 'consul');
 		// break;
-		
 	}
 
 }
 
 const validarCampo = (expresion, input, campo) => {
-	if (expresion.test(input.value)) {
-		document.getElementById('grupo__${campo}').classList.remove('form-control-incorrecto');
+ 	if (expresion.test(input.value)) {
+ 		document.getElementById('grupo__${campo}').classList.remove('form-control-incorrecto');
 		document.getElementById('grupo__${campo}').classList.add('form-control-correcto');
-		document.querySelector('#grupo__${campo} i').classList.add('fa-check-circle');
-		document.querySelector('#grupo__${campo} i').classList.remove('fa-solid fa-circle-xmark');
-		document.querySelector('#grupo__${campo} .form-input-error').classList.remove('form-input-error-activo');
-		campos[campo] = true;
-	} else {
-		document.getElementById('grupo__${campo}').classList.add('form-control-incorrecto');
-		document.getElementById('grupo__${campo}').classList.remove('form-control-correcto');
-		document.querySelector('#grupo__${campo} i').classList.add('fa-solid fa-circle-xmark');
+ 		document.querySelector('#grupo__${campo} i').classList.add('fa-check-circle');
+ 		document.querySelector('#grupo__${campo} i').classList.remove('fa-solid fa-circle-xmark');
+ 		document.querySelector('#grupo__${campo} .form-input-error').classList.remove('form-input-error-activo');
+ 		campos[campo] = true;
+ 	} else {
+ 		document.getElementById('grupo__${campo}').classList.add('form-control-incorrecto');
+ 		document.getElementById('grupo__${campo}').classList.remove('form-control-correcto');
+ 		document.querySelector('#grupo__${campo} i').classList.add('fa-solid fa-circle-xmark');
 		document.querySelector('#grupo__${campo} i').classList.remove('fa-check-circle');
-		document.querySelector('#grupo__${campo} .form-input-error').classList.add('form-input-error-activo');
-		campos[campo] = false;
-	}
+ 		document.querySelector('#grupo__${campo} .form-input-error').classList.add('form-input-error-activo');
+ 		campos[campo] = false;
+ 	} 
 }
 
 inputs.forEach((input) => {
-	input.addEventListener('keyup', validarFormulario);
-	input.addEventListener('blur', validarFormulario);
-});
+ 	input.addEventListener('keyup', validarFormulario);
+ 	input.addEventListener('blur', validarFormulario);
+ });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
+ formulario.addEventListener('submit', (e) => {
+ 	e.preventDefault();
 
 
-	const terminos = document.getElementById('terminos');
-	if (campos.nombre && campos.apellido && campos.email && campos.nacim && campos.imagen && terminos.checked) {
-		formulario.reset();
+ 	const terminos = document.getElementById('terminos');
+ 	if (campos.nombre && campos.apellido && campos.email && campos.nacim && campos.imagen && terminos.checked) {
+ 		formulario.reset();
 
-		document.getElementById('form-mensaje-exito').classList.add('form-mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('form-mensaje-exito').classList.remove('form-mensaje-exito-activo');
-		}, 5000);
+ 		document.getElementById('form-mensaje-exito').classList.add('form-mensaje-exito-activo');
+ 		setTimeout(() => {
+ 			document.getElementById('form-mensaje-exito').classList.remove('form-mensaje-exito-activo');
+ 		}, 5000);
 
-		document.querySelectorAll('form-control-correcto').forEach((icono) => {
-			icono.classList.remove('form-control-correcto');
+ 		document.querySelectorAll('form-control-correcto').forEach((icono) => {
+ 			icono.classList.remove('form-control-correcto'); 		
 		});
-	} else {
+ 	} else {
 		document.getElementById('form-mensaje').classList.add('form-mensaje-activo');
 	}
 });
-

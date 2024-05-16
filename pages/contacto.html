@@ -135,7 +135,7 @@
                 <!-- <button class="form-control" type="submit">Enviar</button> -->
                 <div>
                     <input class="boton_enviar" type="submit" value="Enviar">
-                    <p class="warnings" id="warnings"></p>
+                    <!-- <p class="warnings" id="warnings"></p> -->
                     <!-- <input class="warnings" type="submit" value="Enviar" id="warnings"> -->
                 </div>
                 <br>
@@ -144,16 +144,14 @@
                 <div class="form-help">
                     <a href="#">¿Necesitas ayuda?</a>
                 </div>
-
+                
 
             </form>
 
         </section>
-
-
         <!-- <script src="../Static/js/script.js"></script> -->
         <!-- <script src="../js/validar.js"></script> -->
-        <script src="../js/app3.js"></script>
+        
     </main>
     <br>
     <footer>
@@ -172,6 +170,15 @@
         </div>
 
     </footer>
+    <!-- Modal para mostrar si hay errores -->
+    <div id="myModal" class="modal">
+        <!-- Contenido de la modal -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-message"></p>
+        </div>
+    </div>
+    <script src="../js/validador.js"></script>
 </body>
 
 </html>

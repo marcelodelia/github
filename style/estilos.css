@@ -372,6 +372,13 @@ opacity: 0.8;
     column-gap: 50px;
 
 }
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: aliceblue;
+    padding-top: 20px;
+}
 
 
 /* tablet */

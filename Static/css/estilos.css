@@ -355,13 +355,12 @@ button {
 }
 
 .sociales {
-    height: 15px;
+    font-size: 15px;
+    line-height: 35px;
     text-align: center;
-
 }
 
 #footer { 
     color: rgb(14, 14, 100);
     background-color: #a3548f;
-   
-    }
+}

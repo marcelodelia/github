@@ -15,7 +15,7 @@ const campos = {
  	email: false,
  	nacim: false,
  	imagen: false,
-   // consul: false
+ 
  }
 
 const validarFormulario = (e) => {
@@ -35,29 +35,29 @@ const validarFormulario = (e) => {
  	    case "imagen":
  		 	validarCampo(expresiones.imagen, e.target,'imagen');
  		 break;
-		// case "consul":
-		// 	validarCampo(expresiones.consul, e.target, 'consul');
-		// break;
+	
 	}
 
 }
 
+
 const validarCampo = (expresion, input, campo) => {
- 	if (expresion.test(input.value)) {
- 		document.getElementById('grupo__${campo}').classList.remove('form-control-incorrecto');
-		document.getElementById('grupo__${campo}').classList.add('form-control-correcto');
- 		document.querySelector('#grupo__${campo} i').classList.add('fa-check-circle');
- 		document.querySelector('#grupo__${campo} i').classList.remove('fa-solid fa-circle-xmark');
- 		document.querySelector('#grupo__${campo} .form-input-error').classList.remove('form-input-error-activo');
- 		campos[campo] = true;
- 	} else {
- 		document.getElementById('grupo__${campo}').classList.add('form-control-incorrecto');
- 		document.getElementById('grupo__${campo}').classList.remove('form-control-correcto');
- 		document.querySelector('#grupo__${campo} i').classList.add('fa-solid fa-circle-xmark');
-		document.querySelector('#grupo__${campo} i').classList.remove('fa-check-circle');
- 		document.querySelector('#grupo__${campo} .form-input-error').classList.add('form-input-error-activo');
- 		campos[campo] = false;
- 	} 
+	if(expresion.test(input.value)){
+		document.getElementById(`grupo-${campo}`).classList.remove('form-control-incorrecto');
+		document.getElementById(`grupo-${campo}`).classList.add('form-control-correcto');
+		document.querySelector(`#grupo-${campo} i`).classList.add('fa-solid fa-pen-clip');
+		document.querySelector(`#grupo-${campo} i`).classList.remove('fa-solid fa-pen-clipe');
+		document.querySelector(`#grupo-${campo} form-input-error`).classList.remove('form-input-error-activo')
+		
+
+	}else{
+		document.getElementById(`grupo-${campo}`).classList.add('form-control-incorrecto');
+		document.getElementById(`grupo-${campo}`).classList.remove('form-control-correcto');
+		document.querySelector(`#grupo-${campo} i`).classList.add('fa-solid fa-pen-clip');
+		document.querySelector(`#grupo-${campo} i`).classList.remove('fa-solid fa-pen-clip');
+		document.querySelector(`#grupo-${campo} form-input-error`).classList.add('form-input-error-activo')
+
+	}
 }
 
 inputs.forEach((input) => {

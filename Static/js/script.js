@@ -48,7 +48,7 @@ const validarCampo = (expresion, input, campo) => {
 		document.querySelector(`#grupo-${campo} i`).classList.add('fa-solid fa-pen-clip');
 		document.querySelector(`#grupo-${campo} i`).classList.remove('fa-solid fa-pen-clipe');
 		document.querySelector(`#grupo-${campo} form-input-error`).classList.remove('form-input-error-activo')
-		
+		campos[campo] = true;
 
 	}else{
 		document.getElementById(`grupo-${campo}`).classList.add('form-control-incorrecto');
@@ -56,7 +56,7 @@ const validarCampo = (expresion, input, campo) => {
 		document.querySelector(`#grupo-${campo} i`).classList.add('fa-solid fa-pen-clip');
 		document.querySelector(`#grupo-${campo} i`).classList.remove('fa-solid fa-pen-clip');
 		document.querySelector(`#grupo-${campo} form-input-error`).classList.add('form-input-error-activo')
-
+		campos[campo] = false;
 	}
 }
 

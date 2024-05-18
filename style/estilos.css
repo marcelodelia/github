@@ -145,8 +145,9 @@ input[type="radio"] {
     box-shadow: 15px 15px 25px #592A08;
     transform: scale(1.2);
 }
+
 /* Estilos del header de todas las paginas */
-.redes{
+.redes {
     text-align: center;
 }
 
@@ -198,7 +199,7 @@ input[type="radio"] {
 .primer_local {
     width: 700px;
     height: 400px;
-    margin: 20px;
+    margin: 35px;
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -382,6 +383,186 @@ input[type="radio"] {
     box-shadow: 7px 7px 15px #592A08;
 }
 
+#imagen {
+    text-align: center;
+    padding: 0px 150px 0 0px;
+    border-radius: 3px;
+
+}
+
+/* Estilos de la pagina "contacto" */
+#error_nombre {
+    font-size: 20px;
+    margin-bottom: 0;
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_nombre {
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_error_nombre {
+    color: #db0b0b;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+
+}
+
+/* Estilos de la pagina "contacto" */
+#error_apellido {
+    font-size: 20px;
+    margin-bottom: 0;
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_apellido {
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_error_apellido {
+    color: #db0b0b;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+
+}
+
+/* Estilos de la pagina "contacto" */
+#error_email {
+    font-size: 20px;
+    margin-bottom: 0;
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_email {
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_error_email {
+    color: #db0b0b;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+
+}
+
+/* Estilos de la pagina "contacto" */
+#error_nacim {
+    font-size: 20px;
+    margin-bottom: 0;
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_nacim {
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+}
+
+/* Estilos de la pagina "contacto" */
+#check_error_nacim {
+    color: #db0b0b;
+    opacity: 1;
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    z-index: 100;
+    font-size: 16px;
+    display: none;
+
+}
+
+/* Estilos de la pagina "contacto" */
+#terminos_ok {
+    font-size: 25px;
+    color: #119200;
+    display: none;
+}
+
+/* Estilos de la pagina "contacto" */
+#error-term {
+    height: 45px;
+    line-height: 45px;
+    background: #db0b0b;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.boton_enviar {
+    margin-top: 20px;
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #851414;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+/* Estilos de la pagina "contacto" */
+.boton_enviar:hover {
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+    opacity: 0.8;
+}
+
 /* Estilos de la pagina "contacto" */
 .form-control .form-select {
     display: inline-block;
@@ -394,7 +575,8 @@ input[type="radio"] {
     box-shadow: 7px 7px 15px #592A08;
 }
 
-.form-label { 
+/* Estilos de la pagina "contacto" */
+.form-label {
     font-size: 0.9em;
     line-height: 2;
     display: block;
@@ -402,235 +584,60 @@ input[type="radio"] {
     cursor: pointer;
 }
 
+/* Estilos de la pagina "contacto" */
 .form-control-input {
     position: relative;
 
 }
 
+/* Estilos de la pagina "contacto" */
 .form-input {
-	width: 100%;
-	background: #fff;
-	border: 3px solid transparent;
-	border-radius: 3px;
-	height: 45px;
-	line-height: 45px;
-	padding: 0 40px 0 10px;
-	transition: .3s ease all;
+    width: 100%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
 }
 
+/* Estilos de la pagina "contacto" */
 .form-input:focus {
-	border: 3px solid #ff8800;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
-}
-
-#error_nombre {
-	font-size: 20px;
-	margin-bottom: 0;
-	display: none;
-    color:red;
-    text-align: center;
-}
-
-#check_nombre{
-    color: #119200;
-    opacity: 1;
-    position: absolute;
-	right: 15px;
-	bottom: 30px;
-	z-index: 100;
-	font-size: 16px;
-    display: none;
-}
-
-#check_error_nombre{
-        color: #db0b0b;
-        opacity: 1;
-        position: absolute;
-        right: 15px;
-        bottom: 30px;
-        z-index: 100;
-        font-size: 16px;
-        display: none;
-
-}
-#error_apellido {
-	font-size: 20px;
-	margin-bottom: 0;
-	display: none;
-    color:red;
-    text-align: center;
-}
-
-#check_apellido{
-    color: #119200;
-    opacity: 1;
-    position: absolute;
-	right: 15px;
-	bottom: 30px;
-	z-index: 100;
-	font-size: 16px;
-    display: none;
-}
-
-#check_error_apellido{
-        color: #db0b0b;
-        opacity: 1;
-        position: absolute;
-        right: 15px;
-        bottom: 30px;
-        z-index: 100;
-        font-size: 16px;
-        display: none;
-
-}
-
-#error_email {
-	font-size: 20px;
-	margin-bottom: 0;
-	display: none;
-    color:red;
-    text-align: center;
-}
-
-#check_email{
-    color: #119200;
-    opacity: 1;
-    position: absolute;
-	right: 15px;
-	bottom: 30px;
-	z-index: 100;
-	font-size: 16px;
-    display: none;
-}
-
-#check_error_email{
-        color: #db0b0b;
-        opacity: 1;
-        position: absolute;
-        right: 15px;
-        bottom: 30px;
-        z-index: 100;
-        font-size: 16px;
-        display: none;
-
-}
-
-#error_nacim {
-	font-size: 20px;
-	margin-bottom: 0;
-	display: none;
-    color:red;
-    text-align: center;
-}
-
-#check_nacim{
-    color: #119200;
-    opacity: 1;
-    position: absolute;
-	right: 15px;
-	bottom: 30px;
-	z-index: 100;
-	font-size: 16px;
-    display: none;
-}
-
-#check_error_nacim{
-        color: #db0b0b;
-        opacity: 1;
-        position: absolute;
-        right: 15px;
-        bottom: 30px;
-        z-index: 100;
-        font-size: 16px;
-        display: none;
-
-}
-
-#terminos_ok {
-	font-size: 25px;
-	color: #119200;
-	display: none;
-}
-
-#error-term {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0 15px;
-	border-radius: 3px;
-	display: none;
-}
-
-
-.checkbox {
-	margin-right: 10px;
-}
-
-
-
-.form-btn-enviar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.form-btn {
-	height: 45px;
-	line-height: 45px;
-	width: 30%;
-	background: #851414;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1s ease all;
-}
-
-.form-btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-}
-
-
-
-
-/* Estilos de la pagina "contacto" */
-.label-comer{
-    font-size: 13px;
-    font-weight: 200;
-    background-color: #fff;
-	line-height: 25px;
-
-}
-
-
-
-
-
-
-
-/* Estilos de la pagina "contacto" */
-.boton_enviar:hover {
-    opacity: 0.8;
+    border: 3px solid #ff8800;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 /* Estilos de la pagina "contacto" */
 .checkbox {
+    margin-right: 10px;
     position: relative;
 }
 
+/* Estilos de la pagina "contacto" */
+.form-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* Estilo del fonfo del menu */
+/* Estilos de la pagina "contacto" */
+.label-comer {
+    font-size: 13px;
+    font-weight: 200;
+    background-color: #fff;
+    line-height: 25px;
+}
+
+/* Estilo del fondo del menu */
 .menu {
     text-align: justify;
     word-spacing: 1px;
     font-size: 20px;
-
 }
 
 /* Media querys para tablet */
-
 @media screen and (min-width:768px)and (max-width: 1023px) {
     h1 {
         font-size: 5vw;
@@ -659,7 +666,6 @@ input[type="radio"] {
         display: inline-flexbox;
     }
 
- 
     /* Estilos del header de todas las paginas */
     .menu_grid {
         max-width: 720px;
@@ -684,7 +690,6 @@ input[type="radio"] {
         display: none;
     }
 
-
     /* Estilos del "index" */
     .primer_local {
         width: 500px;
@@ -705,20 +710,19 @@ input[type="radio"] {
 
     }
 
-    .milanesa{
+    .milanesa {
         display: none;
     }
 
-    .chorizo{
+    .chorizo {
         display: none;
     }
+
     .comida {
         width: 150px;
         height: 100px;
-   
-    }
-    
 
+    }
 
     footer {
         flex-direction: column;
@@ -752,6 +756,7 @@ input[type="radio"] {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
     }
 
     /* Estilos del header de todas las paginas */
@@ -786,7 +791,7 @@ input[type="radio"] {
     .primer_local {
         width: 300px;
         height: 200px;
-        padding-left: 10px;
+
     }
 
     /* Estilos del "index" */
@@ -847,8 +852,6 @@ input[type="radio"] {
 
     }
 
-
-
     /* Estilos de la pagina "Sucursales" */
     .grid_container_3 {
         max-width: 420px;
@@ -860,13 +863,11 @@ input[type="radio"] {
 
     }
 
-
     /* Estilos de la pagina "Sucursales" */
     .local_2 {
         margin-top: -100px;
 
     }
-
 
     /* Estilos de la pagina "Sucursales" */
     .infolocal_1 {
@@ -875,12 +876,12 @@ input[type="radio"] {
 
     }
 
+    /* Estilos de la pagina "Sucursales" */
     .infolocal_2 {
         margin-top: -110px;
         font-size: 3vw;
 
     }
-
 
     /* Estilos de la pagina "Sucursales" */
     .mapa_grid {
@@ -924,7 +925,63 @@ input[type="radio"] {
         display: none;
     }
 
+    /* Estilos de la pagina "Contacto" */
+    .formulario {
+        width: 280px;
+        height: 900px;
+        font-size: 3vw;
+        position: relative;
 
+    }
 
+    /* Estilos de la pagina "Contacto" */
+    .form-control {
+        font-size: 3vw;
 
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    .form-control-input {
+        font-size: 3vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    .form-label {
+        font-size: 3vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    .form-btn {
+        font-size: 3vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    .form-input {
+        font-size: 3vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    #error_nombre {
+        font-size: 4vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    #error_apellido {
+        font-size: 4vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    #error_email {
+        font-size: 4vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    #error_nacim {
+        font-size: 4vw;
+    }
+
+    /* Estilos de la pagina "Contacto" */
+    #error_term {
+        font-size: 4vw;
+    }
 }

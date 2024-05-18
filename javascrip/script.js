@@ -7,6 +7,13 @@ const expresiones = {
   nacim: /^.{4,12}$/ // 4 a 12 dígitos.
 };
 
+inputs.forEach((input) =>{
+  input.addEventListner('keyup', controlarInput);
+  input.addEventListner('blur', controlarInput);
+}
+);
+
+
 function controlarInput() {
 
   var valorInputNombre = document.getElementById('nombre').value;
@@ -18,6 +25,7 @@ function controlarInput() {
 
   if (expresiones.nombres.test(valorInputNombre)) {
     console.log(valorInputNombre)
+    
     var checknombre = document.getElementById('check_nombre');
     checknombre.style.display = 'block';
 
@@ -64,7 +72,9 @@ function controlarInput() {
     cartel_nacim.style.display = 'block';
   }
 
-  if (valorInputCheck.checked) {
+ 
+
+  if (valorInputCheck.checked&&expresiones.nombres.test(valorInputNombre)&&expresiones.apellido.test(valorInputApellido)&&expresiones.nacim.test(valorInputNacim)&&expresiones.email.test(valorInputEmail)) {
     console.log("verdadero");
     var cartel_terminos = document.getElementById('terminos_ok');
     cartel_terminos.style.display = 'block';

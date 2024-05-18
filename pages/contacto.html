@@ -49,7 +49,6 @@
                 <div class="form-control-input">
                     <input type="text" class="formulario_input" name="nombre" id="nombre"
                         placeholder="Escribe tu nombre..." required>
-                    <!-- <button type="button" onclick="controlarInput()">Mostrar Input</button> -->
 
                     <i id="check_error_nombre" class="fa-solid fa-circle-xmark"></i>
                     <i id="check_nombre" class="fa-solid fa-circle-check"></i>
@@ -100,7 +99,7 @@
                     <i id="check_nacim" class="fa-solid fa-circle-check"></i>
                 </div>
                 <div id="error_nacim">
-                <p>Indicar la fecha en números</p>
+                    <p>Indicar la fecha en números</p>
                 </div>
             </div>
 
@@ -123,9 +122,9 @@
                 <label for="imagen" class="form-label">¿Qué cocinaste esta semana?, subí la imagen:</label>
                 <div class="form-control-input">
                     <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*">
-                    
+
                 </div>
-                
+
             </div>
 
             <!-- Consigna: Select -->
@@ -160,17 +159,16 @@
             </div>
 
             <div id="error-term">
-                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Debe aceptar los Términos y
-                    Condiciones</p>
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Debe completar todos los campos</p>
 
             </div>
 
             <!-- Botón de Registro -->
 
             <div class="form-control form-btn-enviar">
-                <button type="button" onclick="controlarInput()">Enviar</button>
+                <button class="boton_enviar" type="button" onclick="controlarInput()">Enviar</button>
                 <div id="terminos_ok">
-                <p>Formulario enviado con Éxito</p>
+                    <p>Formulario enviado con Éxito</p>
                 </div>
             </div>
             <br>

@@ -403,14 +403,6 @@ input[type="radio"] {
 }
 
 .form-control-input {
-    /* display: inline-block;
-    background-color: aliceblue;
-    margin-top: 5px;
-    padding: 0 1%;
-    margin-bottom: 12px;
-    margin:1%;
-    border-radius: 10px;
-    box-shadow: 7px 7px 15px #592A08;  */
     position: relative;
 
 }
@@ -432,30 +424,136 @@ input[type="radio"] {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
-.form-input-error {
-	font-size: 12px;
+#error_nombre {
+	font-size: 20px;
 	margin-bottom: 0;
+	display: none;
+    color:red;
+    text-align: center;
+}
+
+#check_nombre{
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+	right: 15px;
+	bottom: 30px;
+	z-index: 100;
+	font-size: 16px;
+    display: none;
+}
+
+#check_error_nombre{
+        color: #db0b0b;
+        opacity: 1;
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+        z-index: 100;
+        font-size: 16px;
+        display: none;
+
+}
+#error_apellido {
+	font-size: 20px;
+	margin-bottom: 0;
+	display: none;
+    color:red;
+    text-align: center;
+}
+
+#check_apellido{
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+	right: 15px;
+	bottom: 30px;
+	z-index: 100;
+	font-size: 16px;
+    display: none;
+}
+
+#check_error_apellido{
+        color: #db0b0b;
+        opacity: 1;
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+        z-index: 100;
+        font-size: 16px;
+        display: none;
+
+}
+
+#error_email {
+	font-size: 20px;
+	margin-bottom: 0;
+	display: none;
+    color:red;
+    text-align: center;
+}
+
+#check_email{
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+	right: 15px;
+	bottom: 30px;
+	z-index: 100;
+	font-size: 16px;
+    display: none;
+}
+
+#check_error_email{
+        color: #db0b0b;
+        opacity: 1;
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+        z-index: 100;
+        font-size: 16px;
+        display: none;
+
+}
+
+#error_nacim {
+	font-size: 20px;
+	margin-bottom: 0;
+	display: none;
+    color:red;
+    text-align: center;
+}
+
+#check_nacim{
+    color: #119200;
+    opacity: 1;
+    position: absolute;
+	right: 15px;
+	bottom: 30px;
+	z-index: 100;
+	font-size: 16px;
+    display: none;
+}
+
+#check_error_nacim{
+        color: #db0b0b;
+        opacity: 1;
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+        z-index: 100;
+        font-size: 16px;
+        display: none;
+
+}
+
+#terminos_ok {
+	font-size: 25px;
+	color: #119200;
 	display: none;
 }
 
-.form-input-error-activo {
-	display: block;
-}
-
-.validacion-estado {
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
-
-.checkbox {
-	margin-right: 10px;
-}
-
-.error-term {
+#error-term {
 	height: 45px;
 	line-height: 45px;
 	background: #F66060;
@@ -464,9 +562,12 @@ input[type="radio"] {
 	display: none;
 }
 
-.error-term-activo {
-	display: block;
+
+.checkbox {
+	margin-right: 10px;
 }
+
+
 
 .form-btn-enviar {
 	display: flex;
@@ -492,20 +593,7 @@ input[type="radio"] {
 }
 
 
-.form-mensaje-exito p {
-	margin: 0;
-}
 
-.form-mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
-}
-
-
-.form-mensaje-exito-activo {
-	display: block;
-}
 
 /* Estilos de la pagina "contacto" */
 .label-comer{
@@ -518,24 +606,7 @@ input[type="radio"] {
 
 
 
-/* Estilos de la Validación */
-.form-control-correcto .validacion-estado {
-    color: #119200;
-    opacity: 1;
-}
 
-.form-control-incorrecto .form-label {
-    color: #db0b0b;
-}
-
-.form-control-incorrecto .validacion-estado {
-    color: #db0b0b;
-    opacity: 1;
-}
-
-.form-control-incorrecto .form-input {
-    border: 3px solid #db0b0b;
-}
 
 
 

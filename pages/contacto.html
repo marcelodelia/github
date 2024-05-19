@@ -47,12 +47,16 @@
             <div class="form-control" id="grupo-nombre">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <div class="form-control-input">
-                    <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Escribe tu nombre..."
-                        required>
-                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
-                    
+                    <input type="text" class="formulario_input" name="nombre" id="nombre"
+                        placeholder="Escribe tu nombre..." required>
+
+                    <i id="check_error_nombre" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_nombre" class="fa-solid fa-circle-check"></i>
+
                 </div>
-                <p class="form-input-error">Solo acepta letras</p>
+                <div id="error_nombre">
+                    <p>Solo acepta letras!!</p>
+                </div>
             </div>
 
             <!-- Apellido -->
@@ -62,9 +66,12 @@
                 <div class="form-control-input">
                     <input type="text" class="form-input" name="apellido" id="apellido"
                         placeholder="Escribe tu apellido..." required>
-                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                    <i id="check_error_apellido" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_apellido" class="fa-solid fa-circle-check"></i>
                 </div>
-                <p class="form-input-error">Solo acepta letras</p>
+                <div id="error_apellido">
+                    <p>Solo acepta letras!!</p>
+                </div>
             </div>
 
 
@@ -74,9 +81,12 @@
                 <div class="form-control-input">
                     <input type="email" class="form-input" name="email" id="email" placeholder="Escribe tu email..."
                         required>
-                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                    <i id="check_error_email" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_email" class="fa-solid fa-circle-check"></i>
                 </div>
-                <p class="form-input-error">El correo puede contener letras, números, puntos, guiones y guión bajo</p>
+                <div id="error_email">
+                    <p>El correo puede contener letras, números, puntos, guiones y guión bajo</p>
+                </div>
             </div>
 
 
@@ -85,15 +95,18 @@
                 <label for="nacim" class="form-label">Fecha de nacimiento:</label>
                 <div class="form-control-input">
                     <input type="date" class="form-input" name="nacim" id="nacim" required>
-                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                    <i id="check_error_nacim" class="fa-solid fa-circle-xmark"></i>
+                    <i id="check_nacim" class="fa-solid fa-circle-check"></i>
                 </div>
-                <p class="form-input-error">Indicar la fecha en números</p>
+                <div id="error_nacim">
+                    <p>Indicar la fecha en números</p>
+                </div>
             </div>
 
             <!-- Consigna: Radiobutton -->
 
             <div class="form-control" id="grupo-comer">
-                <h4>Elige una opción:</h4>
+                <label>Elige una opción:</label>
                 <label class="label-comer">
                     <input type="radio" name="opcion" value="opcion1"> Comer en Casa<br>
                 </label>
@@ -108,10 +121,10 @@
             <div class="form-control" id="grupo-imagen">
                 <label for="imagen" class="form-label">¿Qué cocinaste esta semana?, subí la imagen:</label>
                 <div class="form-control-input">
-                    <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*" required>
-                    <i class="validacion-estado fa-solid fa-circle-xmark"></i>
+                    <input type="file" class="form-input" id="imagen" name="imagen" accept="image/*">
+
                 </div>
-                <p class="form-input-error">Adjuntar una imagen</p>
+
             </div>
 
             <!-- Consigna: Select -->
@@ -145,17 +158,18 @@
                 </label>
             </div>
 
-            <div class="error-term" id="error-term">
-                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Debe aceptar los Términos y
-                    Condiciones</p>
+            <div id="error-term">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error: </b>Debe completar todos los campos</p>
 
             </div>
 
             <!-- Botón de Registro -->
 
             <div class="form-control form-btn-enviar">
-                <button type="submit" class="form-btn">Enviar</button>
-                <p class="form-mensaje-exito" id="form-mensaje-exito">Formulario enviado con Éxito</p>
+                <button class="boton_enviar" type="button" onclick="controlarInput()">Enviar</button>
+                <div id="terminos_ok">
+                    <p>Formulario enviado con Éxito</p>
+                </div>
             </div>
             <br>
 

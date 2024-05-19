@@ -7,11 +7,6 @@ const expresiones = {
   nacim: /^.{4,12}$/ // 4 a 12 dígitos.
 };
 
-inputs.forEach((input) =>{
-  input.addEventListner('keyup', controlarInput);
-  input.addEventListner('blur', controlarInput);
-}
-);
 
 
 function controlarInput() {
@@ -24,7 +19,7 @@ function controlarInput() {
 
 
   if (expresiones.nombres.test(valorInputNombre)) {
-    console.log(valorInputNombre)
+   
     
     var checknombre = document.getElementById('check_nombre');
     checknombre.style.display = 'block';
@@ -37,7 +32,7 @@ function controlarInput() {
   }
 
   if (expresiones.apellido.test(valorInputApellido)) {
-    console.log(valorInputApellido)
+    
     var checkapellido = document.getElementById('check_apellido');
     checkapellido.style.display = 'block';
 
@@ -49,7 +44,7 @@ function controlarInput() {
   }
 
   if (expresiones.email.test(valorInputEmail)) {
-    console.log(valorInputEmail)
+    
     var checkemail = document.getElementById('check_email');
     checkemail.style.display = 'block';
 
@@ -61,7 +56,7 @@ function controlarInput() {
   }
 
   if (expresiones.nacim.test(valorInputNacim)) {
-    console.log(valorInputNacim)
+    
     var checknacim = document.getElementById('check_nacim');
     checknacim.style.display = 'block';
 
@@ -75,7 +70,7 @@ function controlarInput() {
  
 
   if (valorInputCheck.checked&&expresiones.nombres.test(valorInputNombre)&&expresiones.apellido.test(valorInputApellido)&&expresiones.nacim.test(valorInputNacim)&&expresiones.email.test(valorInputEmail)) {
-    console.log("verdadero");
+    
     var cartel_terminos = document.getElementById('terminos_ok');
     cartel_terminos.style.display = 'block';
 

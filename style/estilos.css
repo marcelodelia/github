@@ -636,6 +636,9 @@ input[type="radio"] {
     word-spacing: 1px;
     font-size: 20px;
 }
+.formulario{
+    display: grid;
+}
 
 /* Media querys para tablet */
 @media screen and (min-width:768px)and (max-width: 1023px) {
@@ -927,8 +930,8 @@ input[type="radio"] {
 
     /* Estilos de la pagina "Contacto" */
     .formulario {
-        width: 280px;
-        height: 900px;
+        width: 290px;
+        height: 1100px;
         font-size: 3vw;
         position: relative;
 

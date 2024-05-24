@@ -1,13 +1,9 @@
-
-
 const expresiones = {
   nombres: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Expresión regular para letras y espacios, incluyendo acentos.
   apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
   email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   nacim: /^.{4,12}$/ // 4 a 12 dígitos.
 };
-
-
 
 function controlarInput() {
 
@@ -17,10 +13,8 @@ function controlarInput() {
   var valorInputNacim = document.getElementById('nacim').value;
   var valorInputCheck = document.getElementById('terminos');
 
-
   if (expresiones.nombres.test(valorInputNombre)) {
-   
-    
+
     var checknombre = document.getElementById('check_nombre');
     checknombre.style.display = 'block';
 
@@ -32,7 +26,7 @@ function controlarInput() {
   }
 
   if (expresiones.apellido.test(valorInputApellido)) {
-    
+
     var checkapellido = document.getElementById('check_apellido');
     checkapellido.style.display = 'block';
 
@@ -44,7 +38,7 @@ function controlarInput() {
   }
 
   if (expresiones.email.test(valorInputEmail)) {
-    
+
     var checkemail = document.getElementById('check_email');
     checkemail.style.display = 'block';
 
@@ -56,7 +50,7 @@ function controlarInput() {
   }
 
   if (expresiones.nacim.test(valorInputNacim)) {
-    
+
     var checknacim = document.getElementById('check_nacim');
     checknacim.style.display = 'block';
 
@@ -67,20 +61,27 @@ function controlarInput() {
     cartel_nacim.style.display = 'block';
   }
 
- 
+  if (valorInputCheck.checked && expresiones.nombres.test(valorInputNombre) && expresiones.apellido.test(valorInputApellido) && expresiones.nacim.test(valorInputNacim) && expresiones.email.test(valorInputEmail)) {
 
-  if (valorInputCheck.checked&&expresiones.nombres.test(valorInputNombre)&&expresiones.apellido.test(valorInputApellido)&&expresiones.nacim.test(valorInputNacim)&&expresiones.email.test(valorInputEmail)) {
-    
     var cartel_terminos = document.getElementById('terminos_ok');
     cartel_terminos.style.display = 'block';
+    checknombre.style.display = 'none';
 
-  } else {
-    var cartel_terminos = document.getElementById('error-term');
-    cartel_terminos.style.display = 'block';
+    checkapellido.style.display = 'none';
 
+    checkemail.style.display = 'none';
+
+    checknacim.style.display = 'none';
+
+    document.getElementById("formulario").reset();
 
   }
 
+  else {
+    var cartel_terminos = document.getElementById('error-term');
+    cartel_terminos.style.display = 'block';
+
+  }
 
 }
 

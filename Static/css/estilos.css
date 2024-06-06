@@ -25,8 +25,8 @@ main {
 	margin: auto;
 	padding: 40px;
 }
-/* 
 
+/* 
 input[type="text"], input[type="email"], input[type="date"], input[type="file"], textarea{
     width: 100%;
     padding: 10px;
@@ -34,7 +34,7 @@ input[type="text"], input[type="email"], input[type="date"], input[type="file"],
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
-} */ 
+}  */
 
 
 h1{
@@ -246,7 +246,7 @@ button {
 .form-input-error {
 	font-size: 12px;
 	margin-bottom: 0;
-	display: none;
+	display: none; 
 }
 
 .form-input-error-activo {
@@ -260,7 +260,7 @@ button {
 	bottom: 15px;
 	z-index: 100;
 	font-size: 16px;
-	opacity: 0;
+	/* opacity: 0; */
 }
 
 .checkbox {
@@ -274,7 +274,7 @@ button {
 	background: #F66060;
 	padding: 0 15px;
 	border-radius: 3px;
-	display: none;
+	display: none; 
 }
 
 .error-term-activo {
@@ -354,10 +354,13 @@ button {
     border: 3px solid #db0b0b;
 }
 
+.sociales {
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center;
+}
 
 #footer { 
     color: rgb(14, 14, 100);
-    align-items: center;
     background-color: #a3548f;
-   
-    }
+}
